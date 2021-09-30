@@ -1,0 +1,9 @@
+C:\ips\Ips.App\Ips.App.Dominio\obj\Debug\netstandard2.0\Ips.App.Dominio.csprojAssemblyReference.cache
+C:\ips\Ips.App\Ips.App.Dominio\obj\Debug\netstandard2.0\Ips.App.Dominio.AssemblyInfoInputs.cache
+C:\ips\Ips.App\Ips.App.Dominio\obj\Debug\netstandard2.0\Ips.App.Dominio.AssemblyInfo.cs
+C:\ips\Ips.App\Ips.App.Dominio\obj\Debug\netstandard2.0\Ips.App.Dominio.csproj.CoreCompileInputs.cache
+C:\ips\Ips.App\Ips.App.Dominio\bin\Debug\netstandard2.0\Ips.App.Dominio.deps.json
+C:\ips\Ips.App\Ips.App.Dominio\bin\Debug\netstandard2.0\Ips.App.Dominio.dll
+C:\ips\Ips.App\Ips.App.Dominio\bin\Debug\netstandard2.0\Ips.App.Dominio.pdb
+C:\ips\Ips.App\Ips.App.Dominio\obj\Debug\netstandard2.0\Ips.App.Dominio.dll
+C:\ips\Ips.App\Ips.App.Dominio\obj\Debug\netstandard2.0\Ips.App.Dominio.pdb

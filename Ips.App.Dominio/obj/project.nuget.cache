@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "i8/m1amL148TnFMBhsWRN8bMh+xQPJTHUZ8HXR9N1ZJfn0WAcoH27/9LTXmN/Yme2/eK2hNjqOvPDsG2w2VGow==",
+  "success": true,
+  "projectFilePath": "C:\\ips\\Ips.App\\Ips.App.Dominio\\Ips.App.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\alvas\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\alvas\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
