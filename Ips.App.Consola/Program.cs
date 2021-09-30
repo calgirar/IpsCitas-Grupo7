@@ -10,8 +10,8 @@ namespace Ips.App.Consola
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            AddPaciente();
-            BuscarPaciente(1);
+            //AddPaciente();
+            //BuscarPaciente(1);
             //EliminarPaciente(2);
             //ActualizarPaciente();          
                         
