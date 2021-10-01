@@ -1,17 +1,18 @@
 /* Global*/
 :root {
-    --color-background: #fbfafd;
-    --color-white: #fbfafc;
+    --color-background: #f0eef8;
+    --color-white: #FFF;
     --color-black: #222222;
     --color-darkgray: #505050;
-    --color-purple: #9883E5;
+    --color-lightgray: #f3f3f3;
+    --color-purple: #937de4;
     --color-darkpurple: #7d67cf;
     --color-lightpurple: #B4ADEA;    
 }
 *{
     margin:0;
     padding: 0;
-    color:var(color-darkgray);
+    color:var(--color-darkgray);
 }
 *:focus {
     outline: none;
@@ -104,7 +105,6 @@ header #h-right #h-userinfo span{
 }
 #app-nav ul li a{
     margin-top: 6px;
-    color:var(--color-darkpurple);
 }
 #app-nav ul li i{
     transition: .25s;
@@ -113,13 +113,13 @@ header #h-right #h-userinfo span{
     background: var(--color-darkgray);
 }
 #app-nav ul li.current i{
-    color:#FFF;
+    color:var(--color-white);
 }
 #app-nav ul li:hover{
-    background:var(--color-darkpurple);
+    background:var(--color-purple);
 }
 #app-nav ul li:hover i{
-    color:#FFF;
+    color:var(--color-white);
 }
 
 /* Content */
@@ -131,8 +131,10 @@ header #h-right #h-userinfo span{
 /* app-conainersx */
 .app-conainers{
     padding: 50px 40px;
-    background: #FFFFFF;
+    background: var(--color-white);
     border-radius: 32px;
+    
+    border: 1px solid var(--color-lightgray);
 }
 .app-conainers h2{
     font-size: 1.8rem;
@@ -183,11 +185,11 @@ header #h-right #h-userinfo span{
 .cr-box{
     padding: 64px 48px;
 
-    border-radius: 16px;
+    border-radius: 32px;
     background: var(--color-white);
-    box-shadow: 0 2px 2px rgba(0,0,0,0.10), 
-                0 4px 4px rgba(0,0,0,0.20);
-    z-index: 101;
+    border: 1px solid var(--color-lightgray);
+    /*box-shadow: 0 2px 2px rgba(0,0,0,0.10), 
+                0 4px 4px rgba(0,0,0,0.20);*/
 }
 .cr-form{
     display: grid;
