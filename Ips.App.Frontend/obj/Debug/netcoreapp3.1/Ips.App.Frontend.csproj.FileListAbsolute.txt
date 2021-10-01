@@ -37,3 +37,5 @@ C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Ips.App.Fro
 C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Ips.App.Frontend.csproj.CopyComplete
 C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_LayoutAuth.cshtml.g.cs
 C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_LayoutApp.cshtml.g.cs
+C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Login.cshtml.g.cs
+C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Register.cshtml.g.cs
