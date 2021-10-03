@@ -6,12 +6,15 @@ namespace Ips.App.Persistencia
 {
     public class RepositorioCita : IRepositorioCita
     {
-        private readonly AppContext _appContext;
+        //private readonly AppContext _appContext;
+        private readonly AppContext _appContext = new AppContext();
 
+        /*
         public RepositorioCita(AppContext appContext)
         {
             _appContext=appContext;
         }
+        /*/
         
         Cita IRepositorioCita.AñadirCita(Cita cita)
         {

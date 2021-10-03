@@ -6,12 +6,13 @@ namespace Ips.App.Consola
 {
     class Program
     {
-        private static IRepositorioPaciente _repoPaciente=new RepositorioPaciente(new Persistencia.AppContext());
+        //private static IRepositorioPaciente _repoPaciente=new RepositorioPaciente(new Persistencia.AppContext());
+        private static IRepositorioPaciente _repoPaciente = new RepositorioPaciente();
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
             //AddPaciente();
-            //BuscarPaciente(1);
+            BuscarPaciente(1);
             //EliminarPaciente(2);
             //ActualizarPaciente();          
                         

@@ -6,12 +6,15 @@ namespace Ips.App.Persistencia
 {
     public class RepositorioHorario : IRepositorioHorario
     {
-        private readonly AppContext _appContext;
+        //private readonly AppContext _appContext;
+        private readonly AppContext _appContext = new AppContext();
 
+        /*
         public RepositorioHorario(AppContext appContext)
         {
             _appContext=appContext;
         }
+        /*/
         
         Horario IRepositorioHorario.AñadirHorario(Horario horario)
         {

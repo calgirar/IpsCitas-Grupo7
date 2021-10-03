@@ -1,0 +1,31 @@
+﻿@page
+@model Ips.App.Frontend.Pages.RegisterModel
+@{
+    Layout = "_LayoutAuth";
+    ViewData["Title"] = "Registrate";
+}
+<form action="" class="cr-form">
+    <h1>Registrate</h1>
+    <input type="email" name="email" placeholder="Email">
+    <fieldset>
+        <input type="text" name="firstname" placeholder="Nombres">
+        <input type="text" name="lastname" placeholder="Apellidos">
+    </fieldset>
+    <input type="number" name="nit" placeholder="Cedula o Documento">
+    <fieldset>
+        <input type="tel" name="telefono" placeholder="Telefono">
+        <input type="text" name="direc" placeholder="Dirección">
+    </fieldset>
+    <input type="text" name="user" placeholder="Usuario">
+    <input type="password" name="pass" placeholder="Contraseña">
+    <fieldset>
+        <input type="text" name="city" placeholder="Ciudad">
+        <select name="Genero">
+            <option value="Femenino">Femenino</option>
+            <option value="Masculino">Masculino</option>
+            <option value="Otro">Otro</option>
+        </select>
+    </fieldset>
+    <input type="submit" value="Registrarme">
+    <span>¿Ya estás registrado? <a href="login">Identificarse</a></span>
+</form>

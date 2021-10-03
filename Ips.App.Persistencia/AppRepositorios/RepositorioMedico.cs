@@ -6,13 +6,16 @@ namespace Ips.App.Persistencia
 {
     public class RepositorioMedico : IRepositorioMedico
     {
-        private readonly AppContext _appContext;
+        //private readonly AppContext _appContext;
+        private readonly AppContext _appContext = new AppContext();
 
+        /*
         public RepositorioMedico(AppContext appContext)
         {
             _appContext=appContext;
         }
-        
+        /*/
+
         Medico IRepositorioMedico.AñadirMedico(Medico medico)
         {
             var medicoAdicionado = _appContext.Medicos.Add(medico);
