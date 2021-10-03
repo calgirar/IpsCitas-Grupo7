@@ -1,17 +1,18 @@
 /* Global*/
 :root {
-    --color-background: #fbfafd;
-    --color-white: #fbfafc;
-    --color-black: #222222;
-    --color-darkgray: #505050;
-    --color-purple: #9883E5;
-    --color-darkpurple: #7d67cf;
-    --color-lightpurple: #B4ADEA;    
+    --main-bg-color: #f0eef5;
+    --main-wh-color: #fbfafc;
+    --main-bk-color: #222222;
+    --main-sh-color: #505050;
+    --main-pr-color: #9883E5;
+    --main-pr2-color: #6b51ca;
+    
 }
 *{
     margin:0;
     padding: 0;
-    color:var(color-darkgray);
+    color:var(--main-font-color);
+    font-family: 'Karla', sans-serif;
 }
 *:focus {
     outline: none;
@@ -20,15 +21,15 @@ h1,h2,h3,h4,h5{
     font-family: 'Lato', sans-serif;
 }
 a{
-    color: var( --color-purple);
+    color: var( --main-pr-color);
 }
 a:hover{
-    color: var( --color-darkpurple);
+    color: var( --main-pr2-color);
 }
 .button, input[type=submit]{
-    background-color: var( --color-purple);
+    background-color: var( --main-pr-color);
     border: none;
-    color: var(--color-white);
+    color: var(--main-wh-color);
     padding: 16px 32px;
     font-size: 1.1rem;
     cursor: pointer;
@@ -36,143 +37,15 @@ a:hover{
     border-radius: 4px;
 }
 .button:hover, input[type=button]:hover{
-    background-color: var( --color-darkpurple);
+    background-color: var( --main-pr2-color);
 }
 
 /* Main */
 body{
-    background: var(--color-background);
-    font-family: 'Karla', sans-serif;
+    background: var(--main-bg-color);
 }
 
-/* ------------ Platform ------------ */
-/* Mobile first || Header */
-header{
-    padding: 20px 40px;
-    display: grid;
-    grid-template-columns: auto auto fit-content(128px);
-    grid-template-rows: 42px;
-    grid-template-areas: "left center right";
-}
-header #h-logo{
-    grid-area: left;
-}
-header #h-right{
-    grid-area: right;
-}
-header #h-right #h-userinfo{
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: 41px;
-    align-items: center;
-}
-header #h-right #h-userinfo img{
-    width: 36px;
-    height: auto;
-    border-radius: 50%;
-}
-header #h-right #h-userinfo span{
-    height: fit-content;
-    padding-left: 12px;
-    align-self: center;
-    justify-self: center;
-    font-family: 'Allerta', sans-serif;
-}
-/* Mobile first || Nav */
-#app-nav{
-    padding: 10px 40px;
-}
-#app-nav ul{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 48px);
-    grid-gap: 25px;
-    justify-content: center;
-    list-style: none;
-}
-#app-nav ul li{
-    display: flex;
-    font-size: 28px;
-    width: 48px;
-    height: 48px;
-    align-self: center;
-    justify-self: center;
-    align-content: center;
-    justify-content: center;
-    border-radius: 50%;
-    overflow: hidden;
-    transition: .5s;
-}
-#app-nav ul li a{
-    margin-top: 6px;
-    color:var(--color-darkpurple);
-}
-#app-nav ul li i{
-    transition: .25s;
-}
-#app-nav ul li.current{
-    background: var(--color-darkgray);
-}
-#app-nav ul li.current i{
-    color:#FFF;
-}
-#app-nav ul li:hover{
-    background:var(--color-darkpurple);
-}
-#app-nav ul li:hover i{
-    color:#FFF;
-}
-
-/* Content */
-#content{
-    display: grid;
-    padding: 0 40px;
-    grid-gap: 30px;
-}
-/* app-conainersx */
-.app-conainers{
-    padding: 50px 40px;
-    background: #FFFFFF;
-    border-radius: 32px;
-}
-.app-conainers h2{
-    font-size: 1.8rem;
-}
-
-/* Desktop*/
-@media (min-width: 1025px) {
-    /* Destktop || Content */
-    #content{
-        display: grid;
-        grid-template-columns: 48px auto 280px;
-        padding-top:50px;
-        grid-template-areas: "left middle right";
-    }
-    /* Destktop || Nav */
-    #app-nav{
-        padding: 0;
-        position: fixed;
-        top: calc(50% - 206px);
-    }
-    #app-nav ul{
-        grid-template-columns: auto;
-        grid-template-rows: repeat(auto-fit, 48px);
-        grid-gap: 25px;
-        justify-content: center;
-        list-style: none;
-    }
-    /* Destktop || App-Box */
-    #app-box{
-        grid-area: middle;
-        height: 500px;
-    }
-    /* Destktop || app-sidebar */
-    #app-sidebar{
-        grid-area: right;
-
-    }
-}
-
-/* ------------ Login & Register ------------ */
+/* Login & Register */
 #content-cr{
     min-height: calc(100vh - 40px);
     padding: 20px 0;
@@ -184,9 +57,9 @@ header #h-right #h-userinfo span{
     padding: 64px 48px;
 
     border-radius: 16px;
-    background: var(--color-white);
-    box-shadow: 0 2px 2px rgba(0,0,0,0.10), 
-                0 4px 4px rgba(0,0,0,0.20);
+    background: var(--main-wh-color);
+    /*box-shadow: 0 2px 2px rgba(0,0,0,0.10), 
+                0 4px 4px rgba(0,0,0,0.20);*/
     z-index: 101;
 }
 .cr-form{
@@ -196,7 +69,7 @@ header #h-right #h-userinfo span{
     text-align: center;
 }
 .cr-form h1{
-    color:var(--color-darkgray);
+    color:var(--main-sh-color);
 }
 .cr-form input[type=text], .cr-form input[type=password], .cr-form input[type=email], .cr-form input[type=tel], .cr-form input[type=number]{
     height: 40px;
@@ -205,14 +78,14 @@ header #h-right #h-userinfo span{
     font-size: 1.2rem;
     border: 0;
 
-    /*border-bottom: 2px solid var(--color-darkgray);*/
+    /*border-bottom: 2px solid var(--main-sh-color);*/
     background: #eeedf1;
     border-radius: 4px;
     transition: all 0.5s;
 }
 .cr-form input[type=text]:focus, .cr-form input[type=password]:focus, .cr-form input[type=email]:focus, .cr-form input[type=tel]:focus, .cr-form input[type=number]:focus{
-    /*border-bottom: 2px solid var(--color-darkgray);*/
-    box-shadow: 0 2px 2px var(--color-purple);
+    /*border-bottom: 2px solid var(--main-sh-color);*/
+    box-shadow: 0 2px 2px var(--main-pr-color);
 }
 .cr-form fieldset{
     display: flex;
@@ -232,12 +105,12 @@ header #h-right #h-userinfo span{
     font-size: 1.2rem;
     border: 0;
     background: #eeecf5;
-    color: var(--color-black);
+    color: var(--main-bk-color);
     border-radius: 4px;
     cursor: pointer;
 }
 .cr-form select:focus{
-    box-shadow: 0 2px 2px var(--color-purple);
+    box-shadow: 0 2px 2px var(--main-pr-color);
 }
 .cr-form A{
     text-align: right;
