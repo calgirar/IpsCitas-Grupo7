@@ -6,13 +6,16 @@ namespace Ips.App.Persistencia
 {
     public class RepositorioSede : IRepositorioSede
     {
-        private readonly AppContext _appContext;
+        //private readonly AppContext _appContext;
+        private readonly AppContext _appContext = new AppContext();
 
+        /*
         public RepositorioSede(AppContext appContext)
         {
             _appContext=appContext;
         }
-        
+        /*/
+
         Sede IRepositorioSede.AñadirSede(Sede sede)
         {
             var sedeAdicionado = _appContext.Sedes.Add(sede);

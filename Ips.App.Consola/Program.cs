@@ -6,7 +6,8 @@ namespace Ips.App.Consola
 {
     class Program
     {
-        private static IRepositorioPaciente _repoPaciente=new RepositorioPaciente(new Persistencia.AppContext());
+        //private static IRepositorioPaciente _repoPaciente=new RepositorioPaciente(new Persistencia.AppContext());
+        private static IRepositorioPaciente _repoPaciente = new RepositorioPaciente();
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
