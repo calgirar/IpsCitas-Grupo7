@@ -33,7 +33,7 @@
             <div id="app-box" class="app-conainers">
                 <h2 id="mn-titile">Inicio</h2>
                 <form id="cita-form" action="">
-                    <input type="date" id="caledar-date" hidden>
+                    <input type="date" id="calendar-date" hidden>
                     <div id="calendar-box">
                         <label for="">Selecione una fecha:</label>
                         <div id="calendar">
@@ -50,8 +50,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="appointment-box">
+                    <div id="appointment-box">
                         <label for="">Seleccione la hora deseada:</label>
+                        <div id="appo-box">
+                            <div class="appo-hour">7:00</div>
+                            <div class="appo-hour">7:30</div>
+                        </div>
+                        <input type="submit" value="Solicitar cita">
                     </div>
                 </form>
             </div>

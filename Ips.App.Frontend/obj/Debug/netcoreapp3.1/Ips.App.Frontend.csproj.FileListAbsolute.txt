@@ -90,3 +90,4 @@ C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages
 C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Medicos\Config.cshtml.g.cs
 C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Pacientes\Cita.cshtml.g.cs
 C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Pacientes\Config.cshtml.g.cs
+C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Pacientes\api.cshtml.g.cs

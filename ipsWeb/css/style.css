@@ -204,6 +204,34 @@ header #h-right #h-userinfo span{
 #calendar-days .cd-day.cd-current{
     background: var(--color-lightpurple);
 }
+/* APPOINTMENT */
+#appointment-box{
+    display: grid;
+    grid-template-rows: 34px auto auto 64px;
+    grid-template-areas:    "label"
+                            "hours"
+                            "space"
+                            "button";
+    grid-gap: 20px;
+}
+#appo-box{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-auto-rows: 32px;
+    grid-gap: 5px;
+    overflow: visible;
+}
+#appo-box .appo-hour{
+    padding: 4px 8px;
+    background: var(--color-lightpurple);
+    border-radius: 10px;
+    color: var(--color-white);
+    text-align: center;
+    cursor: pointer;
+}
+#appointment-box input[type=submit]{
+    grid-area: button;
+}
 /* Sidebar */
 #sb-profilebox{
     display: grid;

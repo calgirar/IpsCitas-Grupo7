@@ -46,13 +46,15 @@ $('document').ready(function(){
 
             var selected_date = dateToday.getFullYear()+'-'+(dateToday.getMonth()+1)+'-'+ clicked_day.padStart(2, "0");
 
-            console.log(selected_date);
 
-            $('#caledar-date').val(selected_date);
+            $('#calendar-date').val(selected_date);
+            $("#calendar-date").change();
         });
 
-        $("#caledar-date").change(function() {
-            console.log("cambio");
+        $('#calendar-date').change(function() {
+            var date = $(this).val();
+            console.log(date, 'change');
+            
         });
     }
 });
