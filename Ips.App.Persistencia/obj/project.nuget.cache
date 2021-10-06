@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "V5rrvmHELpqMOGQjz8dSl3ABGtBSAw33V6FpjiW4PHITDhVuB5pi1JNFqIreo+BIwhZXmet6LcukmQWMptqgJw==",
+  "dgSpecHash": "cSvM9QMcykfJI9qruc8jSiSbrUaFfSBffO9RUiA/Ee/pMRPjnSt/06BBc+tTQ2ONvNWa2WhoGIPRBfcJ2jJIxA==",
   "success": true,
-  "projectFilePath": "C:\\ipsCitas\\IpsCitas-Grupo7\\Ips.App.Persistencia\\Ips.App.Persistencia.csproj",
+  "projectFilePath": "C:\\Ips2\\IpsCitas-Grupo7\\Ips.App.Persistencia\\Ips.App.Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sebastian\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

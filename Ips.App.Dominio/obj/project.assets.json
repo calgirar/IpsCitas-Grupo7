@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ipsCitas\\IpsCitas-Grupo7\\Ips.App.Dominio\\Ips.App.Dominio.csproj",
+      "projectUniqueName": "C:\\Ips2\\IpsCitas-Grupo7\\Ips.App.Dominio\\Ips.App.Dominio.csproj",
       "projectName": "Ips.App.Dominio",
-      "projectPath": "C:\\ipsCitas\\IpsCitas-Grupo7\\Ips.App.Dominio\\Ips.App.Dominio.csproj",
+      "projectPath": "C:\\Ips2\\IpsCitas-Grupo7\\Ips.App.Dominio\\Ips.App.Dominio.csproj",
       "packagesPath": "C:\\Users\\Sebastian\\.nuget\\packages\\",
-      "outputPath": "C:\\ipsCitas\\IpsCitas-Grupo7\\Ips.App.Dominio\\obj\\",
+      "outputPath": "C:\\Ips2\\IpsCitas-Grupo7\\Ips.App.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Sebastian\\AppData\\Roaming\\NuGet\\NuGet.Config"

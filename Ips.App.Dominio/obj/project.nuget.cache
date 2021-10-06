@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3A4mtyIXk8GCYPVznmd0rtpxL8JFnRtVXCIfg8r8WSQWYnJK2+df+tOdFQRMEUaiVlTSfQQysZTI67D+dyjN/A==",
+  "dgSpecHash": "XSDkINIg8Gqwz7U48g5K12ahx3AtUNkWb6tJ/yR0EadRHh2DAks03jpE6xh0QtnKPvRWoxzw1hBw3XrxbfZKng==",
   "success": true,
-  "projectFilePath": "C:\\ipsCitas\\IpsCitas-Grupo7\\Ips.App.Dominio\\Ips.App.Dominio.csproj",
+  "projectFilePath": "C:\\Ips2\\IpsCitas-Grupo7\\Ips.App.Dominio\\Ips.App.Dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Sebastian\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

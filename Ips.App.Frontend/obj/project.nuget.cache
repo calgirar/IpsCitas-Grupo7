@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LwCUiL+mcQueFR17growD1F+X9OZsOtg26SM76Cwc/5QgP/VzlkORykMKZuKcQRwSd6CtKOGcrdBkoxZbFeVhA==",
+  "dgSpecHash": "0ueWN0zi5aDFriETR3s2C3CIro3Qos6QpTXC3lyoLZwBadaPgweY46Tpm2aBWfh7X9lI7VMkqOZDigZprhzgFg==",
   "success": true,
-  "projectFilePath": "C:\\ipsCitas\\IpsCitas-Grupo7\\Ips.App.Frontend\\Ips.App.Frontend.csproj",
+  "projectFilePath": "C:\\Ips2\\IpsCitas-Grupo7\\Ips.App.Frontend\\Ips.App.Frontend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

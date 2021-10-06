@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IY++s1xwGm4Qm3D9WLssTzSNBfVO/+Jw/pa8OI+fMAXadQRccwFsfEYmR9X5iGtVBTEji830nwKTfPLDnjMfeg==",
+  "dgSpecHash": "fwWXDqN3BSVPCm57VN2ubRklMeK7YB66qEUOKKHCDttXDXZzwnv6vEAg8uKnA+9ZxouMQ1Rh6IWjmkM8bxfYzg==",
   "success": true,
-  "projectFilePath": "C:\\ipsCitas\\IpsCitas-Grupo7\\Ips.App.Consola\\Ips.App.Consola.csproj",
+  "projectFilePath": "C:\\Ips2\\IpsCitas-Grupo7\\Ips.App.Consola\\Ips.App.Consola.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sebastian\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Sebastian\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

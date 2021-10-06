@@ -5743,11 +5743,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\ipsCitas\\IpsCitas-Grupo7\\Ips.App.Frontend\\Ips.App.Frontend.csproj",
+      "projectUniqueName": "C:\\Ips2\\IpsCitas-Grupo7\\Ips.App.Frontend\\Ips.App.Frontend.csproj",
       "projectName": "Ips.App.Frontend",
-      "projectPath": "C:\\ipsCitas\\IpsCitas-Grupo7\\Ips.App.Frontend\\Ips.App.Frontend.csproj",
+      "projectPath": "C:\\Ips2\\IpsCitas-Grupo7\\Ips.App.Frontend\\Ips.App.Frontend.csproj",
       "packagesPath": "C:\\Users\\Sebastian\\.nuget\\packages\\",
-      "outputPath": "C:\\ipsCitas\\IpsCitas-Grupo7\\Ips.App.Frontend\\obj\\",
+      "outputPath": "C:\\Ips2\\IpsCitas-Grupo7\\Ips.App.Frontend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Sebastian\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5761,11 +5761,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\ipsCitas\\IpsCitas-Grupo7\\Ips.App.Dominio\\Ips.App.Dominio.csproj": {
-              "projectPath": "C:\\ipsCitas\\IpsCitas-Grupo7\\Ips.App.Dominio\\Ips.App.Dominio.csproj"
+            "C:\\Ips2\\IpsCitas-Grupo7\\Ips.App.Dominio\\Ips.App.Dominio.csproj": {
+              "projectPath": "C:\\Ips2\\IpsCitas-Grupo7\\Ips.App.Dominio\\Ips.App.Dominio.csproj"
             },
-            "C:\\ipsCitas\\IpsCitas-Grupo7\\Ips.App.Persistencia\\Ips.App.Persistencia.csproj": {
-              "projectPath": "C:\\ipsCitas\\IpsCitas-Grupo7\\Ips.App.Persistencia\\Ips.App.Persistencia.csproj"
+            "C:\\Ips2\\IpsCitas-Grupo7\\Ips.App.Persistencia\\Ips.App.Persistencia.csproj": {
+              "projectPath": "C:\\Ips2\\IpsCitas-Grupo7\\Ips.App.Persistencia\\Ips.App.Persistencia.csproj"
             }
           }
         }
