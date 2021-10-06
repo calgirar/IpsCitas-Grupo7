@@ -21,7 +21,6 @@ C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Ips.App.Fro
 C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Ips.App.Frontend.RazorCoreGenerate.cache
 C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
 C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
-C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
 C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
@@ -36,7 +35,6 @@ C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Ips.App.Fro
 C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Ips.App.Frontend.genruntimeconfig.cache
 C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Ips.App.Frontend.csproj.CopyComplete
 C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_LayoutAuth.cshtml.g.cs
-C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_LayoutApp.cshtml.g.cs
 C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Login.cshtml.g.cs
 C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Register.cshtml.g.cs
 C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
@@ -83,3 +81,12 @@ C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\bin\Debug\netcoreapp3.1\Ips.App.Dom
 C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\bin\Debug\netcoreapp3.1\Ips.App.Persistencia.dll
 C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\bin\Debug\netcoreapp3.1\Ips.App.Dominio.pdb
 C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\bin\Debug\netcoreapp3.1\Ips.App.Persistencia.pdb
+C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_LayoutMedic.cshtml.g.cs
+C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_LayoutPac.cshtml.g.cs
+C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Pacientes\Index.cshtml.g.cs
+C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Medicos\Index.cshtml.g.cs
+C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Medicos\AddMedic.cshtml.g.cs
+C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Medicos\Citas.cshtml.g.cs
+C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Medicos\Config.cshtml.g.cs
+C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Pacientes\Cita.cshtml.g.cs
+C:\ipsCitas\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Pacientes\Config.cshtml.g.cs
