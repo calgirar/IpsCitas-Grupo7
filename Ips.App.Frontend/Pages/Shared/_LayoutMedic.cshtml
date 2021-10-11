@@ -39,17 +39,16 @@
                 </ul>
             </nav>
             <div id="app-box" class="app-conainers">
-                <h2>@ViewData["Title"] @ViewData["Current"]</h2>
+                <h2>@ViewData["Title"]</h2>
                 @RenderBody()
             </div>
             <div id="app-sidebar" class="app-conainers">
                 <div id="sb-profilebox">
                     <img src="~/media/user.png">
-                    <h2>JUAN SEBASTIAN BARRERO OLIVEROS</h2>
-                    <span>PACIENTE</span>
+                    <h2>@ViewData["medicoNombre"]</h2>
+                    <span>DOCTOR</span>
                 </div>
                 <br>
-                <div class="sb-infobox"><span>EDAD</span> <b>22</b></div>
                 <div class="sb-infobox"><span>ESPECIALIDAD</span> <b>Cardiologo</b></div>
                 <div class="sb-infobox"><span>REGISTRO MEDICO</span> <b>SB465846</b></div>
             </div>

@@ -23,7 +23,7 @@
             <div id="h-right">
                 <div id="h-userinfo">
                     <img src="~/media/user.png">
-                    <span>USERNAME</span>
+                    <span>@ViewData["Usuario"]</span>
                 </div>
             </div>
         </header>
@@ -43,13 +43,18 @@
             <div id="app-sidebar" class="app-conainers">
                 <div id="sb-profilebox">
                     <img src="~/media/user.png">
-                    <h2>JUAN SEBASTIAN BARRERO OLIVEROS</h2>
+                    <h2>@ViewData["pacienteNombre"]</h2>
                     <span>PACIENTE</span>
                 </div>
                 <br>
-                <div class="sb-infobox"><span>EDAD</span> <b>22</b></div>
-                <div class="sb-infobox"><span>ESPECIALIDAD</span> <b>Cardiologo</b></div>
-                <div class="sb-infobox"><span>REGISTRO MEDICO</span> <b>SB465846</b></div>
+                <div class="sb-infobox"><span>CC</span> <b>@ViewData["pacienteNIT"]</b></div>
+                <div class="sb-infobox"><span>Fecha Nac</span> <b>@ViewData["pacienteFechaNacimiento"]</b></div>
+                <div class="sb-infobox"><span>Correo</span> <b>@ViewData["pacienteCorreo"]</b></div>
+                <div class="sb-infobox"><span>Telefono</span> <b>@ViewData["pacienteTelefono"]</b></div>
+                <div class="sb-infobox"><span>Direccion</span> <b>@ViewData["pacienteDireccion"]</b></div>
+                <div class="sb-infobox"><span>Ciudad</span> <b>@ViewData["pacienteCiudad"]</b></div>
+                <div class="sb-infobox"><span>Genero</span> <b>@ViewData["pacienteGenero"]</b></div>
+                <div class="sb-infobox"><span>Usuario</span> <b>@ViewData["pacienteUsuario"]</b></div>
             </div>
         </div>
          @RenderSection("Scripts", required: false)

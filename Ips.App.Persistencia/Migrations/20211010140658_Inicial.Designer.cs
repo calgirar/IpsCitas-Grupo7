@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Ips.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20210930233006_Inicial")]
+    [Migration("20211010140658_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -28,31 +28,16 @@ namespace Ips.App.Persistencia.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<int?>("CiudadSedeId")
+                    b.Property<int?>("DoctorId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("ConsultorioId")
+                    b.Property<int?>("HorarioId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("DireccionSedeId")
+                    b.Property<int?>("PacienteId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("EspecialidadId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("FechaHorarioId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("NombreDoctorId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("NombrePacienteId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("NombreSedeId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("TelefonoSedeId")
+                    b.Property<int?>("SedeId")
                         .HasColumnType("int");
 
                     b.Property<string>("TipoCita")
@@ -60,23 +45,13 @@ namespace Ips.App.Persistencia.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CiudadSedeId");
+                    b.HasIndex("DoctorId");
 
-                    b.HasIndex("ConsultorioId");
+                    b.HasIndex("HorarioId");
 
-                    b.HasIndex("DireccionSedeId");
+                    b.HasIndex("PacienteId");
 
-                    b.HasIndex("EspecialidadId");
-
-                    b.HasIndex("FechaHorarioId");
-
-                    b.HasIndex("NombreDoctorId");
-
-                    b.HasIndex("NombrePacienteId");
-
-                    b.HasIndex("NombreSedeId");
-
-                    b.HasIndex("TelefonoSedeId");
+                    b.HasIndex("SedeId");
 
                     b.ToTable("Citas");
                 });
@@ -201,59 +176,29 @@ namespace Ips.App.Persistencia.Migrations
 
             modelBuilder.Entity("Ips.App.Dominio.Cita", b =>
                 {
-                    b.HasOne("Ips.App.Dominio.Sede", "CiudadSede")
+                    b.HasOne("Ips.App.Dominio.Medico", "Doctor")
                         .WithMany()
-                        .HasForeignKey("CiudadSedeId");
+                        .HasForeignKey("DoctorId");
 
-                    b.HasOne("Ips.App.Dominio.Medico", "Consultorio")
+                    b.HasOne("Ips.App.Dominio.Horario", "Horario")
                         .WithMany()
-                        .HasForeignKey("ConsultorioId");
+                        .HasForeignKey("HorarioId");
 
-                    b.HasOne("Ips.App.Dominio.Sede", "DireccionSede")
+                    b.HasOne("Ips.App.Dominio.Paciente", "Paciente")
                         .WithMany()
-                        .HasForeignKey("DireccionSedeId");
+                        .HasForeignKey("PacienteId");
 
-                    b.HasOne("Ips.App.Dominio.Medico", "Especialidad")
+                    b.HasOne("Ips.App.Dominio.Sede", "Sede")
                         .WithMany()
-                        .HasForeignKey("EspecialidadId");
+                        .HasForeignKey("SedeId");
 
-                    b.HasOne("Ips.App.Dominio.Horario", "FechaHorario")
-                        .WithMany()
-                        .HasForeignKey("FechaHorarioId");
+                    b.Navigation("Doctor");
 
-                    b.HasOne("Ips.App.Dominio.Medico", "NombreDoctor")
-                        .WithMany()
-                        .HasForeignKey("NombreDoctorId");
+                    b.Navigation("Horario");
 
-                    b.HasOne("Ips.App.Dominio.Paciente", "NombrePaciente")
-                        .WithMany()
-                        .HasForeignKey("NombrePacienteId");
+                    b.Navigation("Paciente");
 
-                    b.HasOne("Ips.App.Dominio.Sede", "NombreSede")
-                        .WithMany()
-                        .HasForeignKey("NombreSedeId");
-
-                    b.HasOne("Ips.App.Dominio.Sede", "TelefonoSede")
-                        .WithMany()
-                        .HasForeignKey("TelefonoSedeId");
-
-                    b.Navigation("CiudadSede");
-
-                    b.Navigation("Consultorio");
-
-                    b.Navigation("DireccionSede");
-
-                    b.Navigation("Especialidad");
-
-                    b.Navigation("FechaHorario");
-
-                    b.Navigation("NombreDoctor");
-
-                    b.Navigation("NombrePaciente");
-
-                    b.Navigation("NombreSede");
-
-                    b.Navigation("TelefonoSede");
+                    b.Navigation("Sede");
                 });
 
             modelBuilder.Entity("Ips.App.Dominio.Medico", b =>

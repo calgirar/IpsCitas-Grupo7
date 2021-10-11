@@ -25,7 +25,7 @@ namespace Ips.App.Persistencia
 
         void IRepositorioPaciente.EliminarPaciente(int idPaciente)
         {
-            var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id==idPaciente);
+            var pacienteEncontrado = _appContext.Pacientes.Find(idPaciente);
             if(pacienteEncontrado == null) 
                 return;
             _appContext.Pacientes.Remove(pacienteEncontrado);
@@ -34,7 +34,7 @@ namespace Ips.App.Persistencia
 
         Paciente IRepositorioPaciente.ObtenerPaciente(int idPaciente)
         {
-            return _appContext.Pacientes.FirstOrDefault(p => p.Id==idPaciente);
+            return _appContext.Pacientes.Find(idPaciente);
         }
 
         IEnumerable<Paciente> IRepositorioPaciente.ObtenerTodosPacientes()
@@ -44,7 +44,7 @@ namespace Ips.App.Persistencia
 
         Paciente IRepositorioPaciente.ActualizarPaciente(Paciente paciente)
         {
-            var pacienteEncontrado = _appContext.Pacientes.FirstOrDefault(p => p.Id==paciente.Id);
+            var pacienteEncontrado = _appContext.Pacientes.Find(paciente.Id);
             if(pacienteEncontrado != null)
             {
                 pacienteEncontrado.Nombre= paciente.Nombre;

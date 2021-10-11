@@ -7,7 +7,7 @@
     --color-lightgray: #f3f3f3;
     --color-purple: #937de4;
     --color-darkpurple: #7d67cf;
-    --color-lightpurple: #B4ADEA;    
+    --color-lightpurple: #c1bbf1;    
 }
 *{
     margin:0;
@@ -61,7 +61,6 @@ header #h-logo{
 }
 header #h-logo img{
     height: 42px;
-    width: auto;
 }
 header #h-logo h1{
     padding-left: 10px;
@@ -148,10 +147,106 @@ header #h-right #h-userinfo span{
     
     border: 1px solid var(--color-lightgray);
 }
-.app-conainers h2{
+.app-conainers #mn-titile{
+    padding-bottom: 5px;
     font-size: 1.8rem;
+    border-bottom: 2px solid var(--color-lightgray);
 }
+#cita-form {
+    padding-top: 10px;
+}
+#cita-form label{
+    padding-bottom: 10px;
+    display: block;
+    font-size: 1.3rem;
+}
+#cita-formbox{
+    visibility: hidden;
+    padding: 20px 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));;
+}
+#cita-form select {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    color: var(--color-black);
+    background-color: var(--color-lightgray);  
+}
+/* Calendar */
 
+#calendar{
+    display: grid;
+    width: 282px;
+    border: 1px solid var(--color-lightpurple);
+    border-radius: 10px;
+    overflow: hidden;
+}
+#calendar-titles{
+    padding: 0 2px;
+    display: grid;
+    grid-template-columns: repeat(7, 40px);
+    grid-template-rows: 40px;
+    background: var(--color-lightpurple);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+#calendar-titles span{
+    color: var(--color-darkpurple);
+}
+#calendar-days{
+    padding: 5px 2px;
+    display: grid;
+    grid-template-columns: repeat(7, 40px);
+    grid-auto-rows: 40px;
+}
+#calendar-days .cd-day{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-radius: 4px;
+}
+#calendar-days .cd-day:hover{
+    border: 1px solid var(--color-lightpurple);
+    cursor: pointer;
+}
+#calendar-days .cd-day.cd-current{
+    background: var(--color-lightpurple);
+}
+/* APPOINTMENT */
+#appointment-box{
+    visibility: hidden;
+    display: grid;
+    grid-template-rows: 34px auto auto 64px;
+    grid-template-areas:    "label"
+                            "hours"
+                            "space"
+                            "button";
+    grid-gap: 20px;
+}
+#appo-box{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-auto-rows: 32px;
+    grid-gap: 5px;
+    overflow: visible;
+}
+#appo-box .appo-hour{
+    padding: 4px 8px;
+    background: var(--color-lightpurple);
+    border-radius: 10px;
+    color: var(--color-white);
+    text-align: center;
+    cursor: pointer;
+}
+#appo-box .appo-hour.ah-current{
+    background: var(--color-purple);
+}
+#appointment-box input[type=submit]{
+    grid-area: button;
+}
 /* Sidebar */
 #sb-profilebox{
     display: grid;
@@ -163,7 +258,7 @@ header #h-right #h-userinfo span{
     border-bottom: 2px solid var(--color-lightgray);
 }
 #sb-profilebox img{
-    width: 140px;
+    width: 120px;
     height: auto;
     border-radius: 50%;
 }
@@ -204,7 +299,6 @@ header #h-right #h-userinfo span{
     /* Destktop || App-Box */
     #app-box{
         grid-area: middle;
-        height: 500px;
     }
     /* Destktop || app-sidebar */
     #app-sidebar{
@@ -239,7 +333,7 @@ header #h-right #h-userinfo span{
 .cr-form h1{
     color:var(--color-darkgray);
 }
-.cr-form input[type=text], .cr-form input[type=password], .cr-form input[type=email], .cr-form input[type=tel], .cr-form input[type=number]{
+.cr-form input[type=text], .cr-form input[type=password], .cr-form input[type=email], .cr-form input[type=tel], .cr-form input[type=number], .cr-form input[type=date]{
     height: 40px;
     width: 392px;
     padding: 10px 10px;
@@ -251,7 +345,7 @@ header #h-right #h-userinfo span{
     border-radius: 4px;
     transition: all 0.5s;
 }
-.cr-form input[type=text]:focus, .cr-form input[type=password]:focus, .cr-form input[type=email]:focus, .cr-form input[type=tel]:focus, .cr-form input[type=number]:focus{
+.cr-form input[type=text]:focus, .cr-form input[type=password]:focus, .cr-form input[type=email]:focus, .cr-form input[type=tel]:focus, .cr-form input[type=number]:focus, .cr-form input[type=date]:focus{
     /*border-bottom: 2px solid var(--color-darkgray);*/
     box-shadow: 0 2px 2px var(--color-purple);
 }
@@ -263,12 +357,15 @@ header #h-right #h-userinfo span{
 .cr-form fieldset input{
     width: 180px !important;
 }
+.cr-form input[type=submit]{
+    width: 412px;
+}
 .cr-form select{
     appearance: none;
 	-webkit-appearance: none;
 	-moz-appearance: none;
     height: 60px;
-    width: 100%;
+    width: 412px;
     padding: 10px 10px;
     font-size: 1.2rem;
     border: 0;

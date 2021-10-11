@@ -25,7 +25,7 @@ namespace Ips.App.Persistencia
 
         void IRepositorioHorario.EliminarHorario(int idHorario)
         {
-            var horarioEncontrado = _appContext.Horarios.FirstOrDefault(p => p.Id==idHorario);
+            var horarioEncontrado = _appContext.Horarios.Find(idHorario);
             if(horarioEncontrado == null) 
                 return;
             _appContext.Horarios.Remove(horarioEncontrado);
@@ -34,7 +34,7 @@ namespace Ips.App.Persistencia
 
         Horario IRepositorioHorario.ObtenerHorario(int idHorario)
         {
-            return _appContext.Horarios.FirstOrDefault(p => p.Id==idHorario);
+            return _appContext.Horarios.Find(idHorario);
         }
 
         IEnumerable<Horario> IRepositorioHorario.ObtenerTodosHorarios()
@@ -44,7 +44,7 @@ namespace Ips.App.Persistencia
 
         Horario IRepositorioHorario.ActualizarHorario(Horario horario)
         {
-            var horarioEncontrado = _appContext.Horarios.FirstOrDefault(p => p.Id==horario.Id);
+            var horarioEncontrado = _appContext.Horarios.Find(horario.Id);
             if(horarioEncontrado != null)
             {
                 horarioEncontrado.FechaHorario= horario.FechaHorario;

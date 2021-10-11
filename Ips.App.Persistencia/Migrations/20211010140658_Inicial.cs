@@ -76,120 +76,60 @@ namespace Ips.App.Persistencia.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    NombrePacienteId = table.Column<int>(type: "int", nullable: true),
-                    FechaHorarioId = table.Column<int>(type: "int", nullable: true),
-                    NombreDoctorId = table.Column<int>(type: "int", nullable: true),
-                    EspecialidadId = table.Column<int>(type: "int", nullable: true),
+                    PacienteId = table.Column<int>(type: "int", nullable: true),
+                    HorarioId = table.Column<int>(type: "int", nullable: true),
+                    DoctorId = table.Column<int>(type: "int", nullable: true),
                     TipoCita = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    NombreSedeId = table.Column<int>(type: "int", nullable: true),
-                    DireccionSedeId = table.Column<int>(type: "int", nullable: true),
-                    CiudadSedeId = table.Column<int>(type: "int", nullable: true),
-                    ConsultorioId = table.Column<int>(type: "int", nullable: true),
-                    TelefonoSedeId = table.Column<int>(type: "int", nullable: true)
+                    SedeId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Citas", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Citas_Horarios_FechaHorarioId",
-                        column: x => x.FechaHorarioId,
+                        name: "FK_Citas_Horarios_HorarioId",
+                        column: x => x.HorarioId,
                         principalTable: "Horarios",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Citas_Personas_ConsultorioId",
-                        column: x => x.ConsultorioId,
+                        name: "FK_Citas_Personas_DoctorId",
+                        column: x => x.DoctorId,
                         principalTable: "Personas",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Citas_Personas_EspecialidadId",
-                        column: x => x.EspecialidadId,
+                        name: "FK_Citas_Personas_PacienteId",
+                        column: x => x.PacienteId,
                         principalTable: "Personas",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                     table.ForeignKey(
-                        name: "FK_Citas_Personas_NombreDoctorId",
-                        column: x => x.NombreDoctorId,
-                        principalTable: "Personas",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Citas_Personas_NombrePacienteId",
-                        column: x => x.NombrePacienteId,
-                        principalTable: "Personas",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Citas_Sedes_CiudadSedeId",
-                        column: x => x.CiudadSedeId,
-                        principalTable: "Sedes",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Citas_Sedes_DireccionSedeId",
-                        column: x => x.DireccionSedeId,
-                        principalTable: "Sedes",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Citas_Sedes_NombreSedeId",
-                        column: x => x.NombreSedeId,
-                        principalTable: "Sedes",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Citas_Sedes_TelefonoSedeId",
-                        column: x => x.TelefonoSedeId,
+                        name: "FK_Citas_Sedes_SedeId",
+                        column: x => x.SedeId,
                         principalTable: "Sedes",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Citas_CiudadSedeId",
+                name: "IX_Citas_DoctorId",
                 table: "Citas",
-                column: "CiudadSedeId");
+                column: "DoctorId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Citas_ConsultorioId",
+                name: "IX_Citas_HorarioId",
                 table: "Citas",
-                column: "ConsultorioId");
+                column: "HorarioId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Citas_DireccionSedeId",
+                name: "IX_Citas_PacienteId",
                 table: "Citas",
-                column: "DireccionSedeId");
+                column: "PacienteId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Citas_EspecialidadId",
+                name: "IX_Citas_SedeId",
                 table: "Citas",
-                column: "EspecialidadId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Citas_FechaHorarioId",
-                table: "Citas",
-                column: "FechaHorarioId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Citas_NombreDoctorId",
-                table: "Citas",
-                column: "NombreDoctorId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Citas_NombrePacienteId",
-                table: "Citas",
-                column: "NombrePacienteId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Citas_NombreSedeId",
-                table: "Citas",
-                column: "NombreSedeId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Citas_TelefonoSedeId",
-                table: "Citas",
-                column: "TelefonoSedeId");
+                column: "SedeId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Personas_FechaHorarioId",

@@ -9,6 +9,6 @@ namespace Ips.App.Persistencia
         Horario AñadirHorario (Horario horario);
         Horario ActualizarHorario (Horario horario);
         void EliminarHorario (int idHorario);
-        Horario ObtenerHorario (int idHorario);        
+        Horario ObtenerHorario (int idHorario);      
     }
 }

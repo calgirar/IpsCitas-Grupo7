@@ -26,6 +26,10 @@ namespace Ips.App.Frontend
         {
             services.AddRazorPages();
             services.AddSingleton<IRepositorioPaciente, RepositorioPaciente>();
+            services.AddSingleton<IRepositorioHorario, RepositorioHorario>();
+            services.AddSingleton<IRepositorioCita, RepositorioCita>();
+            services.AddSingleton<IRepositorioMedico, RepositorioMedico>();
+            services.AddSingleton<IRepositorioSede, RepositorioSede>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

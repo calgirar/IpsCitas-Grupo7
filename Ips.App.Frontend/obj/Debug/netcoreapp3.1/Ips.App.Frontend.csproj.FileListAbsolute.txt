@@ -184,3 +184,4 @@ C:\Ips2\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\staticwebassets
 C:\Ips2\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Ips.App.Frontend.dll
 C:\Ips2\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Ips.App.Frontend.pdb
 C:\Ips2\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Ips.App.Frontend.genruntimeconfig.cache
+C:\Ips2\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Pacientes\apiCita.cshtml.g.cs

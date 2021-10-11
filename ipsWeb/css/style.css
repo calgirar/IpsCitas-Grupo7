@@ -152,16 +152,27 @@ header #h-right #h-userinfo span{
     font-size: 1.8rem;
     border-bottom: 2px solid var(--color-lightgray);
 }
-#cita-form{
-    padding: 20px 0;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));;
+#cita-form {
+    padding-top: 10px;
 }
 #cita-form label{
     padding-bottom: 10px;
     display: block;
     font-size: 1.3rem;
+}
+#cita-formbox{
+    visibility: hidden;
+    padding: 20px 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));;
+}
+#cita-form select {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    color: var(--color-black);
+    background-color: var(--color-lightgray);  
 }
 /* Calendar */
 
@@ -206,6 +217,7 @@ header #h-right #h-userinfo span{
 }
 /* APPOINTMENT */
 #appointment-box{
+    visibility: hidden;
     display: grid;
     grid-template-rows: 34px auto auto 64px;
     grid-template-areas:    "label"

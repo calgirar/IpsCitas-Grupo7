@@ -33,30 +33,46 @@
             <div id="app-box" class="app-conainers">
                 <h2 id="mn-titile">Inicio</h2>
                 <form id="cita-form" action="">
+                    <label for="">Seleccione una sede:</label>
+                    <select id="sede-input">
+                        <option></option>
+                        <option>IPS Salud Integral Manizales</option>
+                        <option>IPS Salud Integral Bogotá</option>
+                        <option>IPS Salud Integral Medellín</option>
+                    </select>
+                    <label for="">Seleccione una especialidad:</label>
+                    <select id="espe-input" disabled>
+                        <option></option>
+                        <option>Consulta Cardiología</option>
+                        <option>Consulta Otorrinolaringología</option>
+                        <option>Consulta Gastroenterología</option>
+                    </select>
                     <input type="date" id="calendar-date" hidden>
-                    <div id="calendar-box">
-                        <label for="">Selecione una fecha:</label>
-                        <div id="calendar">
-                            <div id="calendar-titles">
-                                <span>DOM</span>
-                                <span>LUN</span>
-                                <span>MAR</span>
-                                <span>MIE</span>
-                                <span>JUE</span>
-                                <span>VIE</span>
-                                <span>SAB</span>
-                            </div>
-                            <div id="calendar-days">
+                    <div id="cita-formbox">
+                        <div id="calendar-box">
+                            <label for="">Selecione una fecha:</label>
+                            <div id="calendar">
+                                <div id="calendar-titles">
+                                    <span>DOM</span>
+                                    <span>LUN</span>
+                                    <span>MAR</span>
+                                    <span>MIE</span>
+                                    <span>JUE</span>
+                                    <span>VIE</span>
+                                    <span>SAB</span>
+                                </div>
+                                <div id="calendar-days">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div id="appointment-box">
-                        <label for="">Seleccione la hora deseada:</label>
-                        <div id="appo-box">
-                            <div class="appo-hour">7:00</div>
-                            <div class="appo-hour">7:30</div>
+                        <div id="appointment-box">
+                            <label for="">Seleccione la hora deseada:</label>
+                            <div id="appo-box">
+                                <div class="appo-hour">7:00</div>
+                                <div class="appo-hour">7:30</div>
+                            </div>
+                            <input type="submit" value="Solicitar cita">
                         </div>
-                        <input type="submit" value="Solicitar cita">
                     </div>
                 </form>
             </div>

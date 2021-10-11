@@ -25,7 +25,7 @@ namespace Ips.App.Persistencia
 
         void IRepositorioMedico.EliminarMedico(int idMedico)
         {
-            var medicoEncontrado = _appContext.Medicos.FirstOrDefault(p => p.Id==idMedico);
+            var medicoEncontrado = _appContext.Medicos.Find(idMedico);
             if(medicoEncontrado == null) 
                 return;
             _appContext.Medicos.Remove(medicoEncontrado);
@@ -34,7 +34,7 @@ namespace Ips.App.Persistencia
 
         Medico IRepositorioMedico.ObtenerMedico(int idMedico)
         {
-            return _appContext.Medicos.FirstOrDefault(p => p.Id==idMedico);
+            return _appContext.Medicos.Find(idMedico);
         }
 
         IEnumerable<Medico> IRepositorioMedico.ObtenerTodosMedico()
@@ -44,7 +44,7 @@ namespace Ips.App.Persistencia
 
         Medico IRepositorioMedico.ActualizarMedico(Medico medico)
         {
-            var medicoEncontrado = _appContext.Medicos.FirstOrDefault(p => p.Id==medico.Id);
+            var medicoEncontrado = _appContext.Medicos.Find(medico.Id);
             if(medicoEncontrado != null)
             {
                 medicoEncontrado.Nombre= medico.Nombre;

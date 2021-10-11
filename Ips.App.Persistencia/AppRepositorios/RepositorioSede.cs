@@ -25,7 +25,7 @@ namespace Ips.App.Persistencia
 
         void IRepositorioSede.EliminarSede(int idSede)
         {
-            var sedeEncontrado = _appContext.Sedes.FirstOrDefault(p => p.Id==idSede);
+            var sedeEncontrado = _appContext.Sedes.Find(idSede);
             if(sedeEncontrado == null) 
                 return;
             _appContext.Sedes.Remove(sedeEncontrado);
@@ -34,7 +34,7 @@ namespace Ips.App.Persistencia
 
         Sede IRepositorioSede.ObtenerSede(int idSede)
         {
-            return _appContext.Sedes.FirstOrDefault(p => p.Id==idSede);
+            return _appContext.Sedes.Find(idSede);
         }
 
         IEnumerable<Sede> IRepositorioSede.ObtenerTodosSedes()
@@ -44,7 +44,7 @@ namespace Ips.App.Persistencia
 
         Sede IRepositorioSede.ActualizarSede(Sede sede)
         {
-            var sedeEncontrado = _appContext.Sedes.FirstOrDefault(p => p.Id==sede.Id);
+            var sedeEncontrado = _appContext.Sedes.Find(sede.Id);
             if(sedeEncontrado != null)
             {
                 sedeEncontrado.NombreSede= sede.NombreSede;

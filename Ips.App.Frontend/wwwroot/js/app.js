@@ -1,6 +1,7 @@
 $('document').ready(function(){
     if ( $( "#cita-form" ).length ) {
         var clicked;
+        var clicked_hour;
         var selected_sede;
         var selected_espe;
 
@@ -68,7 +69,33 @@ $('document').ready(function(){
         $('#calendar-date').change(function() {
             var date = $(this).val();
             console.log(date, 'change');
-            $("#appointment-box").css('visibility','visible');            
+            $.ajax({
+                type: 'GET',
+                url: 'api',
+                contentType: 'application/json',
+                data: { date : $("#calendar-date").val() },
+                success: function (data) {
+                    console.log(data.disponibilidad);
+                    $( "#appo-box" ).empty();
+                    for (let value of data.disponibilidad) {
+                        
+                        $( "#appo-box" ).append( $( '<div class="appo-hour">'+value+'</div>' ) );
+                    }
+                }
+            });
+            $("#appointment-box").css('visibility','visible');   
+                     
+        });
+        $(document).on('click', '.appo-hour', function(){ 
+            if (clicked_hour != null){
+                $(clicked_hour).removeClass("ah-current");
+            }
+            clicked_hour = this
+            $("#calendar-hour").val($(this).text());
+
+
+            $(this).addClass("ah-current");
+            
         });
     }
 });

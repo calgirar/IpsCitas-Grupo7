@@ -25,7 +25,7 @@ namespace Ips.App.Persistencia
 
         void IRepositorioCita.EliminarCita(int idCita)
         {
-            var citaEncontrado = _appContext.Citas.FirstOrDefault(p => p.Id==idCita);
+            var citaEncontrado = _appContext.Citas.Find(idCita);
             if(citaEncontrado == null) 
                 return;
             _appContext.Citas.Remove(citaEncontrado);
@@ -34,7 +34,7 @@ namespace Ips.App.Persistencia
 
         Cita IRepositorioCita.ObtenerCita(int idCita)
         {
-            return _appContext.Citas.FirstOrDefault(p => p.Id==idCita);
+            return _appContext.Citas.Find(idCita);
         }
 
         IEnumerable<Cita> IRepositorioCita.ObtenerTodasCitas()
@@ -44,23 +44,70 @@ namespace Ips.App.Persistencia
 
         Cita IRepositorioCita.ActualizarCita(Cita cita)
         {
-            var citaEncontrado = _appContext.Citas.FirstOrDefault(p => p.Id==cita.Id);
+            var citaEncontrado = _appContext.Citas.Find(cita.Id);
             if(citaEncontrado != null)
             {
-                citaEncontrado.NombrePaciente= cita.NombrePaciente;
-                citaEncontrado.FechaHorario= cita.FechaHorario;
-                citaEncontrado.NombreDoctor= cita.NombreDoctor;
-                citaEncontrado.Especialidad= cita.Especialidad;
+                citaEncontrado.Paciente= cita.Paciente;
+                citaEncontrado.Horario= cita.Horario;
+                citaEncontrado.Doctor= cita.Doctor;
                 citaEncontrado.TipoCita= cita.TipoCita;
-                citaEncontrado.NombreSede= cita.NombreSede;
-                citaEncontrado.DireccionSede= cita.DireccionSede;
-                citaEncontrado.CiudadSede= cita.CiudadSede;
-                citaEncontrado.Consultorio= cita.Consultorio;
-                citaEncontrado.TelefonoSede= cita.TelefonoSede;
+                citaEncontrado.Sede= cita.Sede;
 
                 _appContext.SaveChanges();
             }
             return citaEncontrado;
+        }
+        void IRepositorioCita.AsignarPaciente(int idCita, int idPaciente)
+        {
+            var citaEncontrada = _appContext.Citas.Find(idCita);
+            if (citaEncontrada != null)
+            {
+                var pacienteEncontrado = _appContext.Pacientes.Find(idPaciente);
+                if (pacienteEncontrado != null)
+                {
+                    citaEncontrada.Paciente = pacienteEncontrado;
+                    _appContext.SaveChanges();
+                }
+            }
+        }
+        void IRepositorioCita.AsignarHorario(int idCita, int idHorario)
+        {
+            var citaEncontrada = _appContext.Citas.Find(idCita);
+            if (citaEncontrada != null)
+            {
+                var Encontrado = _appContext.Horarios.Find(idHorario);
+                if (Encontrado != null)
+                {
+                    citaEncontrada.Horario = Encontrado;
+                    _appContext.SaveChanges();
+                }
+            }
+        }
+        void IRepositorioCita.AsignarMedico(int idCita, int idMedico)
+        {
+            var citaEncontrada = _appContext.Citas.Find(idCita);
+            if (citaEncontrada != null)
+            {
+                var Encontrado = _appContext.Medicos.Find(idMedico);
+                if (Encontrado != null)
+                {
+                    citaEncontrada.Doctor = Encontrado;
+                    _appContext.SaveChanges();
+                }
+            }
+        }
+        void IRepositorioCita.AsignarSede(int idCita, int idSede)
+        {
+            var citaEncontrada = _appContext.Citas.Find(idCita);
+            if (citaEncontrada != null)
+            {
+                var Encontrado = _appContext.Sedes.Find(idSede);
+                if (Encontrado != null)
+                {
+                    citaEncontrada.Sede = Encontrado;
+                    _appContext.SaveChanges();
+                }
+            }
         }
 
     }
