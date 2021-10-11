@@ -1,0 +1,53 @@
+﻿@page
+@model Ips.App.Frontend.Pages.AddMedicModel
+@{
+    ViewData["Title"] = "Agregar Medico";
+    ViewData["Current"] = "AddMed";
+    Layout = "_LayoutMedic";
+
+    ViewData["medicoNombre"] = @Model.medico.Nombre;
+    ViewData["medicoNIT"] = @Model.medico.NIT;
+    ViewData["medicoFechaNacimiento"] = @Model.medico.FechaNacimiento;
+    ViewData["medicoCorreo"] = @Model.medico.Correo;
+    ViewData["medicoTelefono"] = @Model.medico.Telefono;
+    ViewData["medicoDireccion"] = @Model.medico.Direccion;
+    ViewData["medicoCiudad"] = @Model.medico.Ciudad;
+    ViewData["medicoGenero"] = @Model.medico.Genero;
+    ViewData["medicoUsuario"] = @Model.medico.Usuario;
+    ViewData["medicoEspecialidad"] = @Model.medico.Especialidad;
+    ViewData["medicoRegistroMedico"] = @Model.medico.RegistroMedico;
+    ViewData["medicoConsultorio"] = @Model.medico.Consultorio;
+}
+<br>
+<br>
+<form class="cr-form" method="post" >
+    <input type="text" asp-for="medico_n.Nombre" placeholder="Nombres y Apellidos">
+    <input type="number" asp-for="medico_n.NIT" placeholder="Cedula o Documento">
+    <fieldset>  
+        <input type="text" asp-for="medico_n.Usuario" placeholder="Usuario">
+        <input type="password" asp-for="medico_n.Contraseña" placeholder="Contraseña">
+    </fieldset>
+    <input type="email" asp-for="medico_n.Correo" placeholder="Email">
+    <input type="date" asp-for="medico_n.FechaNacimiento" >
+    <fieldset>
+        <input type="tel" asp-for="medico_n.Telefono" placeholder="Telefono">
+        <input type="text" asp-for="medico_n.Direccion" placeholder="Dirección">
+    </fieldset>
+    <input type="text" asp-for="medico_n.Ciudad" placeholder="Ciudad">
+    <select asp-for="medico_n.Genero">
+        <option value="Otro">Género</option>
+        <option value="Femenino">Femenino</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Otro">Otro</option>
+    </select>
+    <input type="text" asp-for="medico_n.RegistroMedico" placeholder="Registro médico">
+    <select asp-for="medico_n.Especialidad">
+        <option value=">Médico General">Seleccione una especialidad</option>
+        <option value=">Médico General">Médico</option>
+        <option value="Cardiologo">Cardiologo</option>
+        <option value="Otorrinolaringologo">Otorrinolaringologo</option>
+        <option value="Gastroenterologo">Gastroenterologo</option>
+    </select>
+
+    <input type="submit" value="Agregar nuevo Médico">
+</form>

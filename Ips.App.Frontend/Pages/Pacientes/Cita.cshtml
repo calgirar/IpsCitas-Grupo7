@@ -1,0 +1,62 @@
+﻿@page
+@model Ips.App.Frontend.Pages.CitaModel
+@{
+    ViewData["Title"] = "Solicitar Cita";
+    ViewData["Current"] = "Citas";
+    Layout = "_LayoutPac";
+
+    ViewData["pacienteNombre"] = @Model.paciente.Nombre;
+    ViewData["pacienteNIT"] = @Model.paciente.NIT;
+    ViewData["pacienteFechaNacimiento"] = @Model.paciente.FechaNacimiento;
+    ViewData["pacienteCorreo"] = @Model.paciente.Correo;
+    ViewData["pacienteTelefono"] = @Model.paciente.Telefono;
+    ViewData["pacienteDireccion"] = @Model.paciente.Direccion;
+    ViewData["pacienteCiudad"] = @Model.paciente.Ciudad;
+    ViewData["pacienteGenero"] = @Model.paciente.Genero;
+    ViewData["pacienteUsuario"] = @Model.paciente.Usuario;
+}
+<form id="cita-form" method="post" >
+    <label for="">Seleccione una sede:</label>
+    <select id="sede-input">
+        <option></option>
+        <option>IPS Salud Integral Manizales</option>
+        <option>IPS Salud Integral Bogotá</option>
+        <option>IPS Salud Integral Medellín</option>
+    </select>
+    <label for="">Seleccione una especialidad:</label>
+    <select id="espe-input" disabled asp-for="cita.TipoCita">
+        <option></option>
+        <option value="Consulta Medicina General">Consulta Medicina General</option>
+        <option value="Consulta Cardiología">Consulta Cardiología</option>
+        <option value="Consulta Otorrinolaringología">Consulta Otorrinolaringología</option>
+        <option value="Consulta Gastroenterología">Consulta Gastroenterología</option>
+    </select>
+    <input type="date" id="calendar-date" hidden asp-for="CitaDia">
+    <input type="text" id="calendar-hour" hidden asp-for="CitaHora">
+    <div id="cita-formbox">
+        <div id="calendar-box">
+            <label for="">Selecione una fecha:</label>
+            <div id="calendar">
+                <div id="calendar-titles">
+                    <span>DOM</span>
+                    <span>LUN</span>
+                    <span>MAR</span>
+                    <span>MIE</span>
+                    <span>JUE</span>
+                    <span>VIE</span>
+                    <span>SAB</span>
+                </div>
+                <div id="calendar-days">
+                </div>
+            </div>
+        </div>
+        <div id="appointment-box">
+            <label for="">Seleccione la hora deseada:</label>
+            <div id="appo-box">
+            </div>
+            <input type="submit" value="Solicitar cita">
+        </div>
+    </div>
+</form>
+<script src="~/js/jquery-3.6.0.min.js"></script>
+<script src="~/js/app.js"></script>

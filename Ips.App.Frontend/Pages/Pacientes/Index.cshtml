@@ -1,0 +1,18 @@
+﻿@page
+@model Ips.App.Frontend.Pages.IndexPacModel
+@{
+    ViewData["Title"] = "Inicio";
+    ViewData["Current"] = "Inicio";
+    Layout = "_LayoutPac";
+
+    ViewData["pacienteNombre"] = @Model.paciente.Nombre;
+    ViewData["pacienteNIT"] = @Model.paciente.NIT;
+    ViewData["pacienteFechaNacimiento"] = @Model.paciente.FechaNacimiento;
+    ViewData["pacienteCorreo"] = @Model.paciente.Correo;
+    ViewData["pacienteTelefono"] = @Model.paciente.Telefono;
+    ViewData["pacienteDireccion"] = @Model.paciente.Direccion;
+    ViewData["pacienteCiudad"] = @Model.paciente.Ciudad;
+    ViewData["pacienteGenero"] = @Model.paciente.Genero;
+    ViewData["pacienteUsuario"] = @Model.paciente.Usuario;
+}
+<br>

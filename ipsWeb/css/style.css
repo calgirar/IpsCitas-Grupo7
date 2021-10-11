@@ -1,0 +1,380 @@
+/* Global*/
+:root {
+    --color-background: #f9f8ff;
+    --color-white: #FFF;
+    --color-black: #222222;
+    --color-darkgray: #3a3a3a;
+    --color-lightgray: #f3f3f3;
+    --color-purple: #937de4;
+    --color-darkpurple: #7d67cf;
+    --color-lightpurple: #c1bbf1;    
+}
+*{
+    margin:0;
+    padding: 0;
+    color:var(--color-darkgray);
+}
+*:focus {
+    outline: none;
+}
+h1,h2,h3,h4,h5{
+    font-family: 'Lato', sans-serif;
+}
+a{
+    color: var( --color-purple);
+}
+a:hover{
+    color: var( --color-darkpurple);
+}
+.button, input[type=submit]{
+    background-color: var( --color-purple);
+    border: none;
+    color: var(--color-white);
+    padding: 16px 32px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: color 0.5s;
+    border-radius: 4px;
+}
+.button:hover, input[type=button]:hover{
+    background-color: var( --color-darkpurple);
+}
+
+/* Main */
+body{
+    background: var(--color-background);
+    font-family: 'Karla', sans-serif;
+}
+
+/* ------------ Platform ------------ */
+/* Mobile first || Header */
+header{
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: auto auto fit-content(128px);
+    grid-template-rows: 42px;
+    grid-template-areas: "left center right";
+}
+header #h-logo{
+    grid-area: left;
+    display: flex;
+}
+header #h-logo img{
+    height: 42px;
+}
+header #h-logo h1{
+    padding-left: 10px;
+}
+header #h-logo span{
+    font-size: 1rem;
+}
+header #h-right{
+    grid-area: right;
+}
+header #h-right #h-userinfo{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 41px;
+    align-items: center;
+}
+header #h-right #h-userinfo img{
+    width: 36px;
+    height: auto;
+    border-radius: 50%;
+}
+header #h-right #h-userinfo span{
+    height: fit-content;
+    padding-left: 12px;
+    align-self: center;
+    justify-self: center;
+    font-family: 'Allerta', sans-serif;
+}
+/* Mobile first || Nav */
+#app-nav{
+    padding: 10px 40px;
+}
+#app-nav ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 48px);
+    grid-gap: 25px;
+    justify-content: center;
+    list-style: none;
+}
+#app-nav ul li{
+    display: flex;
+    font-size: 28px;
+    width: 48px;
+    height: 48px;
+    align-self: center;
+    justify-self: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: background-color .5s;
+}
+#app-nav ul li a{
+    margin-top: 6px;
+}
+#app-nav ul li i{
+    transition: .25s;
+    color: var(--color-black);
+}
+#app-nav ul li.current{
+    background: var(--color-black);
+}
+#app-nav ul li.current i{
+    color:var(--color-white);
+}
+#app-nav ul li:hover{
+    background:var(--color-purple);
+}
+#app-nav ul li:hover i{
+    color:var(--color-white);
+}
+
+/* Content */
+#content{
+    display: grid;
+    padding: 0 40px;
+    grid-gap: 30px;
+}
+/* app-conainersx */
+.app-conainers{
+    padding: 40px 30px;
+    background: var(--color-white);
+    border-radius: 32px;
+    
+    border: 1px solid var(--color-lightgray);
+}
+.app-conainers #mn-titile{
+    padding-bottom: 5px;
+    font-size: 1.8rem;
+    border-bottom: 2px solid var(--color-lightgray);
+}
+#cita-form {
+    padding-top: 10px;
+}
+#cita-form label{
+    padding-bottom: 10px;
+    display: block;
+    font-size: 1.3rem;
+}
+#cita-formbox{
+    visibility: hidden;
+    padding: 20px 0;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(282px, 1fr));;
+}
+#cita-form select {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 10px;
+    color: var(--color-black);
+    background-color: var(--color-lightgray);  
+}
+/* Calendar */
+
+#calendar{
+    display: grid;
+    width: 282px;
+    border: 1px solid var(--color-lightpurple);
+    border-radius: 10px;
+    overflow: hidden;
+}
+#calendar-titles{
+    padding: 0 2px;
+    display: grid;
+    grid-template-columns: repeat(7, 40px);
+    grid-template-rows: 40px;
+    background: var(--color-lightpurple);
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+#calendar-titles span{
+    color: var(--color-darkpurple);
+}
+#calendar-days{
+    padding: 5px 2px;
+    display: grid;
+    grid-template-columns: repeat(7, 40px);
+    grid-auto-rows: 40px;
+}
+#calendar-days .cd-day{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-radius: 4px;
+}
+#calendar-days .cd-day:hover{
+    border: 1px solid var(--color-lightpurple);
+    cursor: pointer;
+}
+#calendar-days .cd-day.cd-current{
+    background: var(--color-lightpurple);
+}
+/* APPOINTMENT */
+#appointment-box{
+    visibility: hidden;
+    display: grid;
+    grid-template-rows: 34px auto auto 64px;
+    grid-template-areas:    "label"
+                            "hours"
+                            "space"
+                            "button";
+    grid-gap: 20px;
+}
+#appo-box{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-auto-rows: 32px;
+    grid-gap: 5px;
+    overflow: visible;
+}
+#appo-box .appo-hour{
+    padding: 4px 8px;
+    background: var(--color-lightpurple);
+    border-radius: 10px;
+    color: var(--color-white);
+    text-align: center;
+    cursor: pointer;
+}
+#appointment-box input[type=submit]{
+    grid-area: button;
+}
+/* Sidebar */
+#sb-profilebox{
+    display: grid;
+    padding: 0 0 14px 0;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    border-bottom: 2px solid var(--color-lightgray);
+}
+#sb-profilebox img{
+    width: 140px;
+    height: auto;
+    border-radius: 50%;
+}
+#sb-profilebox h2{
+    padding: 8px 0 6px 0;
+    font-size: 1.2rem;
+}
+.sb-infobox{
+    padding: 8px 0 6px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 14px;
+    justify-content: space-between;
+    border-bottom: 1px dotted var(--color-lightgray);
+}
+/* Desktop*/
+@media (min-width: 1025px) {
+    /* Destktop || Content */
+    #content{
+        display: grid;
+        grid-template-columns: 48px auto 280px;
+        padding-top:50px;
+        grid-template-areas: "left middle right";
+    }
+    /* Destktop || Nav */
+    #app-nav{
+        padding: 0;
+        position: fixed;
+        top: calc(50% - 206px);
+    }
+    #app-nav ul{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(auto-fit, 48px);
+        grid-gap: 25px;
+        justify-content: center;
+        list-style: none;
+    }
+    /* Destktop || App-Box */
+    #app-box{
+        grid-area: middle;
+        height: 500px;
+    }
+    /* Destktop || app-sidebar */
+    #app-sidebar{
+        grid-area: right;
+        height: fit-content;
+    }
+}
+
+/* ------------ Login & Register ------------ */
+#content-cr{
+    min-height: calc(100vh - 40px);
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cr-box{
+    padding: 64px 48px;
+
+    border-radius: 32px;
+    background: var(--color-white);
+    border: 1px solid var(--color-lightgray);
+    /*box-shadow: 0 2px 2px rgba(0,0,0,0.10), 
+                0 4px 4px rgba(0,0,0,0.20);*/
+}
+.cr-form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 14px;
+    text-align: center;
+}
+.cr-form h1{
+    color:var(--color-darkgray);
+}
+.cr-form input[type=text], .cr-form input[type=password], .cr-form input[type=email], .cr-form input[type=tel], .cr-form input[type=number]{
+    height: 40px;
+    width: 392px;
+    padding: 10px 10px;
+    font-size: 1.2rem;
+    border: 0;
+
+    /*border-bottom: 2px solid var(--color-darkgray);*/
+    background: #eeedf1;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+.cr-form input[type=text]:focus, .cr-form input[type=password]:focus, .cr-form input[type=email]:focus, .cr-form input[type=tel]:focus, .cr-form input[type=number]:focus{
+    /*border-bottom: 2px solid var(--color-darkgray);*/
+    box-shadow: 0 2px 2px var(--color-purple);
+}
+.cr-form fieldset{
+    display: flex;
+    border: none;
+    grid-gap: 10px;
+}
+.cr-form fieldset input{
+    width: 180px !important;
+}
+.cr-form select{
+    appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    height: 60px;
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 1.2rem;
+    border: 0;
+    background: #eeecf5;
+    color: var(--color-black);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.cr-form select:focus{
+    box-shadow: 0 2px 2px var(--color-purple);
+}
+.cr-form A{
+    text-align: right;
+}
+.cr-form span{
+    padding-top: 16px;
+}
