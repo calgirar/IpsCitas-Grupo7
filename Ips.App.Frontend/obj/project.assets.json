@@ -5738,19 +5738,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\alvas\\.nuget\\packages\\": {}
+    "C:\\Users\\Sebastian\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Escritorio\\Proyecto MinTic\\IpsCitas-Grupo7\\Ips.App.Frontend\\Ips.App.Frontend.csproj",
+      "projectUniqueName": "C:\\IpsForce\\IpsCitas-Grupo7\\Ips.App.Frontend\\Ips.App.Frontend.csproj",
       "projectName": "Ips.App.Frontend",
-      "projectPath": "D:\\Escritorio\\Proyecto MinTic\\IpsCitas-Grupo7\\Ips.App.Frontend\\Ips.App.Frontend.csproj",
-      "packagesPath": "C:\\Users\\alvas\\.nuget\\packages\\",
-      "outputPath": "D:\\Escritorio\\Proyecto MinTic\\IpsCitas-Grupo7\\Ips.App.Frontend\\obj\\",
+      "projectPath": "C:\\IpsForce\\IpsCitas-Grupo7\\Ips.App.Frontend\\Ips.App.Frontend.csproj",
+      "packagesPath": "C:\\Users\\Sebastian\\.nuget\\packages\\",
+      "outputPath": "C:\\IpsForce\\IpsCitas-Grupo7\\Ips.App.Frontend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\alvas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Sebastian\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5761,11 +5761,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "D:\\Escritorio\\Proyecto MinTic\\IpsCitas-Grupo7\\Ips.App.Dominio\\Ips.App.Dominio.csproj": {
-              "projectPath": "D:\\Escritorio\\Proyecto MinTic\\IpsCitas-Grupo7\\Ips.App.Dominio\\Ips.App.Dominio.csproj"
+            "C:\\IpsForce\\IpsCitas-Grupo7\\Ips.App.Dominio\\Ips.App.Dominio.csproj": {
+              "projectPath": "C:\\IpsForce\\IpsCitas-Grupo7\\Ips.App.Dominio\\Ips.App.Dominio.csproj"
             },
-            "D:\\Escritorio\\Proyecto MinTic\\IpsCitas-Grupo7\\Ips.App.Persistencia\\Ips.App.Persistencia.csproj": {
-              "projectPath": "D:\\Escritorio\\Proyecto MinTic\\IpsCitas-Grupo7\\Ips.App.Persistencia\\Ips.App.Persistencia.csproj"
+            "C:\\IpsForce\\IpsCitas-Grupo7\\Ips.App.Persistencia\\Ips.App.Persistencia.csproj": {
+              "projectPath": "C:\\IpsForce\\IpsCitas-Grupo7\\Ips.App.Persistencia\\Ips.App.Persistencia.csproj"
             }
           }
         }
@@ -5796,7 +5796,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.414\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
       }
     }
   }

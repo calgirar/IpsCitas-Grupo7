@@ -34,3 +34,12 @@ D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Dominio\obj\Debug\netstand
 D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Dominio\obj\Debug\netstandard2.0\Ips.App.Dominio.csproj.CoreCompileInputs.cache
 D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Dominio\obj\Debug\netstandard2.0\Ips.App.Dominio.dll
 D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Dominio\obj\Debug\netstandard2.0\Ips.App.Dominio.pdb
+C:\IpsForce\IpsCitas-Grupo7\Ips.App.Dominio\bin\Debug\netstandard2.0\Ips.App.Dominio.deps.json
+C:\IpsForce\IpsCitas-Grupo7\Ips.App.Dominio\bin\Debug\netstandard2.0\Ips.App.Dominio.dll
+C:\IpsForce\IpsCitas-Grupo7\Ips.App.Dominio\bin\Debug\netstandard2.0\Ips.App.Dominio.pdb
+C:\IpsForce\IpsCitas-Grupo7\Ips.App.Dominio\obj\Debug\netstandard2.0\Ips.App.Dominio.csprojAssemblyReference.cache
+C:\IpsForce\IpsCitas-Grupo7\Ips.App.Dominio\obj\Debug\netstandard2.0\Ips.App.Dominio.AssemblyInfoInputs.cache
+C:\IpsForce\IpsCitas-Grupo7\Ips.App.Dominio\obj\Debug\netstandard2.0\Ips.App.Dominio.AssemblyInfo.cs
+C:\IpsForce\IpsCitas-Grupo7\Ips.App.Dominio\obj\Debug\netstandard2.0\Ips.App.Dominio.csproj.CoreCompileInputs.cache
+C:\IpsForce\IpsCitas-Grupo7\Ips.App.Dominio\obj\Debug\netstandard2.0\Ips.App.Dominio.dll
+C:\IpsForce\IpsCitas-Grupo7\Ips.App.Dominio\obj\Debug\netstandard2.0\Ips.App.Dominio.pdb

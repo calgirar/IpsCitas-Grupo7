@@ -46,3 +46,15 @@ D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Persistencia\obj\Debug\net
 D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Persistencia\obj\Debug\netstandard2.1\Ips.App.Persistencia.csproj.CopyComplete
 D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Persistencia\obj\Debug\netstandard2.1\Ips.App.Persistencia.dll
 D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Persistencia\obj\Debug\netstandard2.1\Ips.App.Persistencia.pdb
+C:\IpsForce\IpsCitas-Grupo7\Ips.App.Persistencia\bin\Debug\netstandard2.1\Ips.App.Persistencia.deps.json
+C:\IpsForce\IpsCitas-Grupo7\Ips.App.Persistencia\bin\Debug\netstandard2.1\Ips.App.Persistencia.dll
+C:\IpsForce\IpsCitas-Grupo7\Ips.App.Persistencia\bin\Debug\netstandard2.1\Ips.App.Persistencia.pdb
+C:\IpsForce\IpsCitas-Grupo7\Ips.App.Persistencia\bin\Debug\netstandard2.1\Ips.App.Dominio.dll
+C:\IpsForce\IpsCitas-Grupo7\Ips.App.Persistencia\bin\Debug\netstandard2.1\Ips.App.Dominio.pdb
+C:\IpsForce\IpsCitas-Grupo7\Ips.App.Persistencia\obj\Debug\netstandard2.1\Ips.App.Persistencia.csprojAssemblyReference.cache
+C:\IpsForce\IpsCitas-Grupo7\Ips.App.Persistencia\obj\Debug\netstandard2.1\Ips.App.Persistencia.AssemblyInfoInputs.cache
+C:\IpsForce\IpsCitas-Grupo7\Ips.App.Persistencia\obj\Debug\netstandard2.1\Ips.App.Persistencia.AssemblyInfo.cs
+C:\IpsForce\IpsCitas-Grupo7\Ips.App.Persistencia\obj\Debug\netstandard2.1\Ips.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\IpsForce\IpsCitas-Grupo7\Ips.App.Persistencia\obj\Debug\netstandard2.1\Ips.App.Persistencia.csproj.CopyComplete
+C:\IpsForce\IpsCitas-Grupo7\Ips.App.Persistencia\obj\Debug\netstandard2.1\Ips.App.Persistencia.dll
+C:\IpsForce\IpsCitas-Grupo7\Ips.App.Persistencia\obj\Debug\netstandard2.1\Ips.App.Persistencia.pdb

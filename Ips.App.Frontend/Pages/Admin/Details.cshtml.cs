@@ -7,14 +7,14 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Ips.App.Dominio;
 using Ips.App.Persistencia;
 
-namespace Ips.App.Frontend.Pages.Details
+namespace Ips.App.Frontend.Pages
 {
-    public class DetailsAdminModel : PageModel
+    public class DetailsModel : PageModel
     {
         private readonly IRepositorioPaciente _repoPaciente;
 
         public Paciente paciente {get; set;}
-        public DetailsAdminModel(IRepositorioPaciente repoPaciente)
+        public DetailsModel(IRepositorioPaciente repoPaciente)
         {
             _repoPaciente = repoPaciente;
         }
@@ -26,10 +26,8 @@ namespace Ips.App.Frontend.Pages.Details
             if (paciente == null)
             {
                 return NotFound();
-            } else
-            {
-                return Page();
             }
+            return Page();
         }
     }
 }
