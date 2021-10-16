@@ -1,0 +1,53 @@
+﻿@page
+@model Ips.App.Frontend.Pages.Medicos.MedicosAdminModel
+@{
+    ViewData["Title"] = "Medicos";
+    ViewData["Current"] = "Pacientes";
+    Layout = "_LayoutAdminMedic";
+
+    ViewData["medicoNombre"] = @Model.medico.Nombre;
+    ViewData["medicoNIT"] = @Model.medico.NIT;
+    ViewData["medicoFechaNacimiento"] = @Model.medico.FechaNacimiento;
+    ViewData["medicoCorreo"] = @Model.medico.Correo;
+    ViewData["medicoTelefono"] = @Model.medico.Telefono;
+    ViewData["medicoDireccion"] = @Model.medico.Direccion;
+    ViewData["medicoCiudad"] = @Model.medico.Ciudad;
+    ViewData["medicoGenero"] = @Model.medico.Genero;
+    ViewData["medicoUsuario"] = @Model.medico.Usuario;
+    ViewData["medicoEspecialidad"] = @Model.medico.Especialidad;
+    ViewData["medicoRegistroMedico"] = @Model.medico.RegistroMedico;
+    ViewData["medicoConsultorio"] = @Model.medico.Consultorio;
+}
+<br>
+<h2>Listado Medicos</h2>
+<br>
+<center>
+<h4>
+<table class ="table table-striped">
+    <thead>
+        <tr>
+            
+            <th scope= "col">Nombre</th>
+            <th scope= "col">Teléfono</th>
+            <th scope= "col">Correo</th>
+            <th scope= "col">Especialidad</th>
+            <th scope = "col">Operaciones</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var medicol in Model.medicos)
+        {
+            <tr>
+                <td>@medicol.Nombre</td>
+                <td>@medicol.Telefono</td>
+                <td>@medicol.Correo</td>
+                <td>@medicol.Especialidad</td>
+                <td><a class="btn btn-secondary" asp-page="DetailsMedic" asp-route-id="@medicol.Id">Editar</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+</center>
+</h4>
+

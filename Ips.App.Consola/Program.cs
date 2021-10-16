@@ -15,11 +15,11 @@ namespace Ips.App.Consola
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            AddDoc();
-            AddSede();
-            AddPaciente();
+            //AddDoc();
+            //AddSede();
+            //AddPaciente();
             //BuscarPaciente(1);
-            //EliminarPaciente(2);
+            EliminarPaciente(4);
             //ActualizarPaciente();
             //AddCita();
             //BuscarHora();

@@ -385,3 +385,6 @@ C:\IpsForce\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\staticwebas
 C:\IpsForce\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Ips.App.Frontend.dll
 C:\IpsForce\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Ips.App.Frontend.pdb
 C:\IpsForce\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Ips.App.Frontend.genruntimeconfig.cache
+D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\Medicos.cshtml.g.cs
+D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\DetailsMedic.cshtml.g.cs
+D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_LayoutAdminMedic.cshtml.g.cs

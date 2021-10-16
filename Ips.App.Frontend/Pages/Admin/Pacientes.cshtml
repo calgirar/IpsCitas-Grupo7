@@ -27,7 +27,7 @@
             <th scope= "col">Nombre</th>
             <th scope= "col">Teléfono</th>
             <th scope= "col">Correo</th>
-            <th colspan="2" scope = "col">Operaciones</th>
+            <th scope = "col">Operaciones</th>
 
         </tr>
     </thead>
@@ -38,10 +38,8 @@
                 <td>@pacientel.Nombre</td>
                 <td>@pacientel.Telefono</td>
                 <td>@pacientel.Correo</td>
-                <td><a class="btn btn-secondary" asp-page="Details" asp-rotue-id="@pacientel.Id">Detalle</a></td>
-                <td><a class="btn btn-secondary" asp-page="" asp-rotue-id="@pacientel.Id">Editar</a></td>
+                <td><a class="btn btn-secondary" asp-page="Details" asp-route-id="@pacientel.Id">Editar</a></td>
             </tr>
-            
         }
     </tbody>
 </table>
