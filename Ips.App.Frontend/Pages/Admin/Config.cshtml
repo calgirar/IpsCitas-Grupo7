@@ -1,0 +1,50 @@
+﻿@page
+@model Ips.App.Frontend.Pages.ConfigAdminModel
+@{
+    ViewData["Title"] = "Configuración";
+    ViewData["Current"] = "Config";
+    Layout = "_LayoutAdmin";
+
+    ViewData["pacienteNombre"] = @Model.paciente.Nombre;
+    ViewData["pacienteNIT"] = @Model.paciente.NIT;
+    ViewData["pacienteFechaNacimiento"] = @Model.paciente.FechaNacimiento;
+    ViewData["pacienteCorreo"] = @Model.paciente.Correo;
+    ViewData["pacienteTelefono"] = @Model.paciente.Telefono;
+    ViewData["pacienteDireccion"] = @Model.paciente.Direccion;
+    ViewData["pacienteCiudad"] = @Model.paciente.Ciudad;
+    ViewData["pacienteGenero"] = @Model.paciente.Genero;
+    ViewData["pacienteUsuario"] = @Model.paciente.Usuario;
+}
+<form class="cr-form" method="post" >
+    <input type="number" asp-for="paciente.Id">
+    <br>
+    <input type="text" asp-for="paciente.Nombre" placeholder="Nombres y Apellidos">
+    <input type="number" asp-for="paciente.NIT" placeholder="Cedula o Documento">
+    <fieldset>  
+        <input type="text" asp-for="paciente.Usuario" placeholder="Usuario">
+        <input type="password" asp-for="paciente.Contraseña" placeholder="Contraseña">
+    </fieldset>
+    <input type="email" asp-for="paciente.Correo" placeholder="Email">
+    <input type="date" asp-for="paciente.FechaNacimiento" >
+    <fieldset>
+        <input type="tel" asp-for="paciente.Telefono" placeholder="Telefono">
+        <input type="text" asp-for="paciente.Direccion" placeholder="Dirección">
+    </fieldset>
+    <input type="text" asp-for="paciente.Ciudad" placeholder="Ciudad">
+    <select asp-for="paciente.Genero">
+        <option value="Otro">Género</option>
+        <option value="Femenino">Femenino</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Otro">Otro</option>
+    </select>
+    <select asp-for="paciente.Eps">
+        <option value=" ">Seleccione su EPS</option>
+        <option value="Medplus">Medplus</option>
+        <option value="Colsanitas">Colsanitas</option>
+        <option value="Sura">Sura</option>
+        <option value="Medimas">Medimas</option>
+        <option value="AsmetSalud">AsmetSalud</option>
+        <option value="Famisanar">Famisanar</option>
+    </select>
+    <input type="submit" value="Modificar">
+</form>

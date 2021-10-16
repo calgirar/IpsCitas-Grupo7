@@ -60,6 +60,25 @@ namespace Ips.App.Consola
             };
             _repoPaciente.AñadirPaciente(paciente);
         }
+
+        private static void AddAdmin()
+        {
+            var paciente =new Paciente
+            {
+                Nombre="Admin",
+                NIT=1,
+                FechaNacimiento = new DateTime(2021, 1, 1),
+                Correo="admin@ipsconfig.com",
+                Telefono="Admin",
+                Direccion="Admin",
+                Ciudad="Admin",
+                Genero="Admin",
+                Usuario="Admin",
+                Contraseña="000000000",
+                Eps= "Admin"
+            };
+            _repoPaciente.AñadirPaciente(paciente);
+        }
         private static void AddDoc()
         {
             var doctor =new Medico

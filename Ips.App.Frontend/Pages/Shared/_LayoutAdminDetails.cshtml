@@ -1,0 +1,46 @@
+@{
+    ViewData["HomeCurrent"] = "Inicio";
+    ViewData["CitasCurrent"] = "Citas";
+    ViewData["ConfigeCurrent"] = "Config";
+}
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] - IPS Salud Integral</title>
+        <link rel="stylesheet" href="~/css/ipsicons.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla&family=Lato&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="~/css/style.css" />
+    </head>
+    <body>
+        <header>
+            <div id="h-logo">
+                <img src="~/media/logo.png" alt="Salud Integral">
+                <h1>Salud Integral <span>/ Admin</span></h1>
+            </div>
+            <div id="h-right">
+                <div id="h-userinfo">
+                    <img src="~/media/logo.png">
+                    <span>@ViewData["Usuario"]</span>
+                </div>
+            </div>
+        </header>
+        <div id="content">
+            <nav id="app-nav">
+                <ul>
+                    <li class='@(@ViewData["Current"] == @ViewData["HomeCurrent"] ? "current" : "")' ><a asp-page="Index"><i class="icon-home"></i></a></li>
+                    <li class='@(@ViewData["Current"] == @ViewData["MedicosCurrent"] ? "current" : "")' ><a asp-page="Medicos"><i class="icon-stethoscope"></i></a></li>
+                    <li class='@(@ViewData["Current"] == @ViewData["PacientesCurrent"] ? "current" : "")' ><a asp-page="Pacientes"><i class="icon-stethoscope"></i></a></li>
+                    <li class='@(@ViewData["Current"] == @ViewData["ConfigeCurrent"] ? "current" : "")' ><a asp-page="Config"><i class="icon-cog"></i></a></li>
+                </ul>
+            </nav>
+            <div id="app-box" class="app-conainers">
+                <h2>@ViewData["Title"]</h2>
+                @RenderBody()
+            </div>
+        </div>
+         @RenderSection("Scripts", required: false)
+    </body>
+</html>
