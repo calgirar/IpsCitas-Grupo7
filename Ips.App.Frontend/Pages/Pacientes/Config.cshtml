@@ -4,7 +4,18 @@
     ViewData["Title"] = "Configuración";
     ViewData["Current"] = "Config";
     Layout = "_LayoutPac";
+
+    ViewData["pacienteNombre"] = @Model.paciente.Nombre;
+    ViewData["pacienteNIT"] = @Model.paciente.NIT;
+    ViewData["pacienteFechaNacimiento"] = @Model.paciente.FechaNacimiento;
+    ViewData["pacienteCorreo"] = @Model.paciente.Correo;
+    ViewData["pacienteTelefono"] = @Model.paciente.Telefono;
+    ViewData["pacienteDireccion"] = @Model.paciente.Direccion;
+    ViewData["pacienteCiudad"] = @Model.paciente.Ciudad;
+    ViewData["pacienteGenero"] = @Model.paciente.Genero;
+    ViewData["pacienteUsuario"] = @Model.paciente.Usuario;
 }
+<br>
 <form class="cr-form" method="post" >
     <input type="number" asp-for="paciente.Id" hidden>
     <input type="text" asp-for="paciente.Nombre" placeholder="Nombres y Apellidos">

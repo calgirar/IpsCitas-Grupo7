@@ -253,7 +253,6 @@ D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcore
 D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
 D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
 D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Login.cshtml.g.cs
-D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Medicos\AddMedic.cshtml.g.cs
 D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Medicos\Citas.cshtml.g.cs
 D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Medicos\Config.cshtml.g.cs
 D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Medicos\Index.cshtml.g.cs
@@ -390,3 +389,4 @@ D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcore
 D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_LayoutAdminMedic.cshtml.g.cs
 D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\EdicPac.cshtml.g.cs
 D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\EdicMed.cshtml.g.cs
+D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\AddMedic.cshtml.g.cs

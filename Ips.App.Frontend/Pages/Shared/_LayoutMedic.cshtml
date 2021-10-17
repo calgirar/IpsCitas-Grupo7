@@ -1,7 +1,6 @@
 @{
     ViewData["HomeCurrent"] = "Inicio";
     ViewData["CitasCurrent"] = "Citas";
-    ViewData["AddMedCurrent"] = "AddMed";
     ViewData["ConfigeCurrent"] = "Config";
 }
 <!DOCTYPE html>
@@ -33,9 +32,7 @@
                 <ul>
                     <li class='@(@ViewData["Current"] == @ViewData["HomeCurrent"] ? "current" : "")' ><a asp-page="Index"><i class="icon-home"></i></a></li>
                     <li class='@(@ViewData["Current"] == @ViewData["CitasCurrent"] ? "current" : "")' ><a asp-page="Citas"><i class="icon-heartbeat"></i></a></li>
-                    <li class='@(@ViewData["Current"] == @ViewData["AddMedCurrent"] ? "current" : "")' ><a asp-page="AddMedic"><i class="icon-user-md"></i></a></li>
                     <li class='@(@ViewData["Current"] == @ViewData["ConfigeCurrent"] ? "current" : "")' ><a asp-page="Config"><i class="icon-cog"></i></a></li>
-                    <li><a href="#"><i class="icon-reply"></i></a></li>
                 </ul>
             </nav>
             <div id="app-box" class="app-conainers">

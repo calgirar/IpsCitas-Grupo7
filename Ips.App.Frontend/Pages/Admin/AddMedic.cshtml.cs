@@ -20,7 +20,7 @@ namespace Ips.App.Frontend.Pages
         public Medico medico_n {get; set;}
         public void OnGet()
         {
-            medico= _repoMedico.ObtenerMedico(1);
+            medico= _repoMedico.ObtenerMedico(5);
             medico_n=  new Medico();
         }
         public IActionResult OnPost(Medico medico_n)

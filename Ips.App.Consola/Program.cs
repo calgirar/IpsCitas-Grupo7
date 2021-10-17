@@ -20,7 +20,7 @@ namespace Ips.App.Consola
             //AddPaciente();
             //BuscarPaciente(1);
             //EliminarPaciente(4);
-            //ActualizarPaciente();
+            ActualizarMedico();
             //AddCita();
             //BuscarHora();
                         
@@ -152,6 +152,25 @@ namespace Ips.App.Consola
                 Eps= "Compensar"
             };
             _repoPaciente.ActualizarPaciente(paciente);
+        }
+        private static void ActualizarMedico()
+        {
+            var doctor =new Medico
+            {
+                Id=1,
+                Nombre="fdsafsa Prueba",
+                NIT=1234526,
+                FechaNacimiento = new DateTime(2010, 8, 18),
+                Correo="caruiz@gmail.com",
+                Telefono="412341535",
+                Direccion="Carrera 34 #6-32",
+                Ciudad="Manizales",
+                Genero="Masculino",
+                Usuario="crlruiz",
+                Contraseña="fjksdoiq",
+                Especialidad="Cardiologo"
+            };
+            _repoMedico.ActualizarMedico(doctor);
         }
     }
 }
