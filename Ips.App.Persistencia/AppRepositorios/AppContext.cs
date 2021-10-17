@@ -17,8 +17,8 @@ namespace Ips.App.Persistencia
        {
            if (!optionsBuilder.IsConfigured)
            {
-               //optionsBuilder.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = IpsData");
-               optionsBuilder.UseSqlServer("Server=tcp:ipsapp.database.windows.net,1433;Database=IpsData;User ID=IpsAdmin;Password=MisionTIC2022#;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+               optionsBuilder.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog = IpsData");
+               //optionsBuilder.UseSqlServer("Server=tcp:ipsapp.database.windows.net,1433;Database=IpsData;User ID=IpsAdmin;Password=MisionTIC2022#;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
            }
        }
    }   
