@@ -22,7 +22,7 @@ namespace Ips.App.Frontend.Pages.Medicos
         }
         public void OnGet()
         {
-            medico=_repoMedico.ObtenerMedico(5);
+            medico=_repoMedico.ObtenerMedico(4);
             medicos=_repoMedico.ObtenerTodosMedico();
         }
         }
