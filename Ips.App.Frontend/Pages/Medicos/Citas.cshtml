@@ -1,0 +1,20 @@
+﻿@page
+@model Ips.App.Frontend.Pages.CitasModel
+@{
+    ViewData["Title"] = "Ver Citas";
+    ViewData["Current"] = "Citas";
+    Layout = "_LayoutMedic";
+
+    ViewData["medicoNombre"] = @Model.medico.Nombre;
+    ViewData["medicoNIT"] = @Model.medico.NIT;
+    ViewData["medicoFechaNacimiento"] = @Model.medico.FechaNacimiento;
+    ViewData["medicoCorreo"] = @Model.medico.Correo;
+    ViewData["medicoTelefono"] = @Model.medico.Telefono;
+    ViewData["medicoDireccion"] = @Model.medico.Direccion;
+    ViewData["medicoCiudad"] = @Model.medico.Ciudad;
+    ViewData["medicoGenero"] = @Model.medico.Genero;
+    ViewData["medicoUsuario"] = @Model.medico.Usuario;
+    ViewData["medicoEspecialidad"] = @Model.medico.Especialidad;
+    ViewData["medicoRegistroMedico"] = @Model.medico.RegistroMedico;
+    ViewData["medicoConsultorio"] = @Model.medico.Consultorio;
+}

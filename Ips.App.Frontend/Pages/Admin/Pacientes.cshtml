@@ -1,0 +1,48 @@
+﻿@page
+@model Ips.App.Frontend.Pages.Pacientes.PacientesAdminModel
+@{
+    ViewData["Title"] = "Pacientes";
+    ViewData["Current"] = "Pacientes";
+    Layout = "_LayoutAdmin";
+
+    ViewData["pacienteNombre"] = @Model.paciente.Nombre;
+    ViewData["pacienteNIT"] = @Model.paciente.NIT;
+    ViewData["pacienteFechaNacimiento"] = @Model.paciente.FechaNacimiento;
+    ViewData["pacienteCorreo"] = @Model.paciente.Correo;
+    ViewData["pacienteTelefono"] = @Model.paciente.Telefono;
+    ViewData["pacienteDireccion"] = @Model.paciente.Direccion;
+    ViewData["pacienteCiudad"] = @Model.paciente.Ciudad;
+    ViewData["pacienteGenero"] = @Model.paciente.Genero;
+    ViewData["pacienteUsuario"] = @Model.paciente.Usuario;
+}
+<br>
+<h2>Listado Pacientes</h2>
+<br>
+<center>
+<h4>
+<table class ="table table-striped">
+    <thead>
+        <tr>
+            
+            <th scope= "col">Nombre</th>
+            <th scope= "col">Teléfono</th>
+            <th scope= "col">Correo</th>
+            <th scope = "col">Operaciones</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pacientel in Model.pacientes)
+        {
+            <tr>
+                <td>@pacientel.Nombre</td>
+                <td>@pacientel.Telefono</td>
+                <td>@pacientel.Correo</td>
+                <td><a class="btn btn-secondary" asp-page="Details" asp-route-id="@pacientel.Id">Editar</a></td>
+                <td><a class="btn btn-secondary" asp-page="EdicPac" asp-route-id="@pacientel.Id">Detalles</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+</center>
+</h4>

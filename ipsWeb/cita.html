@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <head>
+        <title>Clinica</title>
+        <link rel="stylesheet" href="css/ipsicons.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Karla&family=Lato&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div id="h-logo">
+                <img src="media/logo.png" alt="Salud Integral">
+                <h1>Salud Integral <span>/ Medicos</span></h1>
+            </div>
+            <div id="h-right">
+                <div id="h-userinfo">
+                    <img src="media/user.png">
+                    <span>USERNAME</span>
+                </div>
+            </div>
+        </header>
+        <div id="content">
+            <nav id="app-nav">
+                <ul>
+                    <li class="current"><a href="#"><i class="icon-home"></i></a></li>
+                    <li><a href="#"><i class="icon-user"></i></a></li>
+                    <li><a href="#"><i class="icon-stethoscope"></i></a></li>
+                    <li><a href="#"><i class="icon-user-md"></i></a></li>
+                    <li><a href="#"><i class="icon-cog"></i></a></li>
+                </ul>
+            </nav>
+            <div id="app-box" class="app-conainers">
+                <h2 id="mn-titile">Inicio</h2>
+                <form id="cita-form" action="">
+                    <label for="">Seleccione una sede:</label>
+                    <select id="sede-input">
+                        <option></option>
+                        <option>IPS Salud Integral Manizales</option>
+                        <option>IPS Salud Integral Bogotá</option>
+                        <option>IPS Salud Integral Medellín</option>
+                    </select>
+                    <label for="">Seleccione una especialidad:</label>
+                    <select id="espe-input" disabled>
+                        <option></option>
+                        <option>Consulta Cardiología</option>
+                        <option>Consulta Otorrinolaringología</option>
+                        <option>Consulta Gastroenterología</option>
+                    </select>
+                    <input type="date" id="calendar-date" hidden>
+                    <div id="cita-formbox">
+                        <div id="calendar-box">
+                            <label for="">Selecione una fecha:</label>
+                            <div id="calendar">
+                                <div id="calendar-titles">
+                                    <span>DOM</span>
+                                    <span>LUN</span>
+                                    <span>MAR</span>
+                                    <span>MIE</span>
+                                    <span>JUE</span>
+                                    <span>VIE</span>
+                                    <span>SAB</span>
+                                </div>
+                                <div id="calendar-days">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="appointment-box">
+                            <label for="">Seleccione la hora deseada:</label>
+                            <div id="appo-box">
+                                <div class="appo-hour">7:00</div>
+                                <div class="appo-hour">7:30</div>
+                            </div>
+                            <input type="submit" value="Solicitar cita">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="app-sidebar" class="app-conainers">
+                <div id="sb-profilebox">
+                    <img src="media/user.png">
+                    <h2>JUAN SEBASTIAN BARRERO OLIVEROS</h2>
+                    <span>PACIENTE</span>
+                </div>
+                <br>
+                <div class="sb-infobox"><span>EDAD</span> <b>22</b></div>
+                <div class="sb-infobox"><span>ESPECIALIDAD</span> <b>Cardiologo</b></div>
+                <div class="sb-infobox"><span>REGISTRO MEDICO</span> <b>SB465846</b></div>
+            </div>
+        </div>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>

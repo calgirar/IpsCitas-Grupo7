@@ -1,0 +1,60 @@
+﻿@page
+@model Ips.App.Frontend.Pages.Medicos.EdicMedModel
+@{
+    ViewData["Title"] = "Detalles del Medico";
+    ViewData["Current"] = "Médico";
+    Layout = "_LayoutAdminDetails";
+}
+<center>
+<table class="table table-striped">
+        <tr>
+            <th scope="col">Nombre</th>
+            <td>@Model.medico.Nombre</td>
+        </tr>
+        <tr>
+            <th scope="col">NIT</th>
+            <td>@Model.medico.NIT</td>
+        </tr>
+        <tr>
+            <th scope="col">FechaNacimiento</th>
+            <td>@Model.medico.FechaNacimiento</td>
+        </tr>
+        <tr>
+            <th scope="col">Correo</th>
+            <td>@Model.medico.Correo</td>
+        </tr>
+        <tr>
+            <th scope="col">Telefono</th>
+            <td>@Model.medico.Telefono</td>
+        </tr>
+        <tr>
+            <th scope="col">Direccion</th>
+            <td>@Model.medico.Direccion</td>
+        </tr>
+        <tr>
+            <th scope="col">Ciudad</th>
+            <td>@Model.medico.Ciudad</td>
+        </tr>
+        <tr>
+            <th scope="col">Genero</th>
+            <td>@Model.medico.Genero</td>
+        </tr>
+        <tr>
+            <th scope="col">Especialidad</th>
+            <td>@Model.medico.Especialidad</td>
+        </tr>
+        <tr>
+            <th scope="col">Registro Médico</th>
+            <td>@Model.medico.RegistroMedico</td>
+        </tr>
+        <tr>
+            <th scope="col">Horario</th>
+            <td>@Model.medico.FechaHorario</td>
+        </tr>
+        <tr>
+            <th scope="col">Número de Consultorio</th>
+            <td>@Model.medico.Consultorio</td>
+        </tr>
+</table>
+<a class="btn-btn-secondary" asp-page="./Index">Volver</a>
+</center>

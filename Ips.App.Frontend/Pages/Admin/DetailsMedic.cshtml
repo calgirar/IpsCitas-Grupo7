@@ -1,0 +1,41 @@
+﻿@page
+@model Ips.App.Frontend.Pages.DetailsMedicModel
+@{
+    ViewData["Title"] = "Detalles de los Medicos";
+    ViewData["Current"] = "Medicos";
+    Layout = "_LayoutAdminDetails";
+}
+<br>
+<br>
+<form class="cr-form" method="post" >
+    <input type="number" asp-for="medico.Id" hidden>
+    <input type="text" asp-for="medico.Nombre" placeholder="Nombres y Apellidos">
+    <input type="number" asp-for="medico.NIT" placeholder="Cedula o Documento">
+    <fieldset>  
+        <input type="text" asp-for="medico.Usuario" placeholder="Usuario">
+        <input type="password" asp-for="medico.Contraseña" placeholder="Contraseña">
+    </fieldset>
+    <input type="email" asp-for="medico.Correo" placeholder="Email">
+    <input type="date" asp-for="medico.FechaNacimiento" >
+    <fieldset>
+        <input type="tel" asp-for="medico.Telefono" placeholder="Telefono">
+        <input type="text" asp-for="medico.Direccion" placeholder="Dirección">
+    </fieldset>
+    <input type="text" asp-for="medico.Ciudad" placeholder="Ciudad">
+    <select asp-for="medico.Genero">
+        <option value="Otro">Género</option>
+        <option value="Femenino">Femenino</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Otro">Otro</option>
+    </select>
+    <input type="text" asp-for="medico.RegistroMedico" placeholder="Registro médico">
+    <select asp-for="medico.Especialidad">
+        <option value=">Médico General">Seleccione una especialidad</option>
+        <option value=">Médico General">Médico</option>
+        <option value="Cardiologo">Cardiologo</option>
+        <option value="Otorrinolaringologo">Otorrinolaringologo</option>
+        <option value="Gastroenterologo">Gastroenterologo</option>
+    </select>
+
+    <input type="submit" value="Editar Médico">
+</form>

@@ -1,0 +1,27 @@
+﻿@page
+@model Ips.App.Frontend.Pages.ConfigAdminModel
+@{
+    ViewData["Title"] = "Configuración del Administrador";
+    ViewData["Current"] = "Config";
+    Layout = "_LayoutAdmin";
+
+    ViewData["pacienteNombre"] = @Model.paciente.Nombre;
+    ViewData["pacienteNIT"] = @Model.paciente.NIT;
+    ViewData["pacienteFechaNacimiento"] = @Model.paciente.FechaNacimiento;
+    ViewData["pacienteCorreo"] = @Model.paciente.Correo;
+    ViewData["pacienteTelefono"] = @Model.paciente.Telefono;
+    ViewData["pacienteDireccion"] = @Model.paciente.Direccion;
+    ViewData["pacienteCiudad"] = @Model.paciente.Ciudad;
+    ViewData["pacienteGenero"] = @Model.paciente.Genero;
+    ViewData["pacienteUsuario"] = @Model.paciente.Usuario;
+}
+<form class="cr-form" method="post" >
+    <input type="number" asp-for="paciente.Id" hidden>
+    <br>
+    <input type="text" asp-for="paciente.Nombre" placeholder="Nombres y Apellidos">
+    <fieldset>  
+        <input type="text" asp-for="paciente.Usuario" placeholder="Usuario">
+        <input type="password" asp-for="paciente.Contraseña" placeholder="Contraseña">
+    </fieldset>
+    <input type="submit" value="Modificar">
+</form>
