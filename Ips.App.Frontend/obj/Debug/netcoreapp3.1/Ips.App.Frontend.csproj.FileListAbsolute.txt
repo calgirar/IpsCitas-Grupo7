@@ -388,3 +388,5 @@ C:\IpsForce\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Ips.App.Fro
 D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\Medicos.cshtml.g.cs
 D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\DetailsMedic.cshtml.g.cs
 D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_LayoutAdminMedic.cshtml.g.cs
+D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\EdicPac.cshtml.g.cs
+D:\Escritorio\Proyecto MinTic\IpsCitas-Grupo7\Ips.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Admin\EdicMed.cshtml.g.cs

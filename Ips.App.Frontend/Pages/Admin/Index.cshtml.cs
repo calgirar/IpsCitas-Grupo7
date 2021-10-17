@@ -21,7 +21,6 @@ namespace Ips.App.Frontend.Pages
         public void OnGet()
         {
             paciente= _repoPaciente.ObtenerPaciente(3);
-            // TODO: Esperando clases de sesiones
         }
     }
 }

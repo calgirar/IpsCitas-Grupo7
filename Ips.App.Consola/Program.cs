@@ -19,7 +19,7 @@ namespace Ips.App.Consola
             //AddSede();
             //AddPaciente();
             //BuscarPaciente(1);
-            EliminarPaciente(4);
+            //EliminarPaciente(4);
             //ActualizarPaciente();
             //AddCita();
             //BuscarHora();

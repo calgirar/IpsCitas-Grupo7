@@ -21,12 +21,13 @@ namespace Ips.App.Frontend.Pages
         public Paciente paciente {get; set;}
         public void OnGet()
         {
-            paciente= new Paciente(); 
+            paciente= new Paciente();
+             
         }
         public IActionResult OnPost()
         {
             // TODO: Esperando clases de sesiones
-            return RedirectToPage("Index");             
+            return RedirectToPage("/Admin/Index");             
         }
     }
 }

@@ -1,13 +1,13 @@
 ﻿@page
 @model Ips.App.Frontend.Pages.DetailsModel
 @{
-    ViewData["Title"] = "Detalles del Paciente";
+    ViewData["Title"] = "Modificar Paciente";
     ViewData["Current"] = "Pacientes";
     Layout = "_LayoutAdminDetails";
 }
 
 <form class="cr-form" method="post" >
-    <input type="number" asp-for="paciente.Id">
+    <input type="number" asp-for="paciente.Id" hidden>
     <br>
     <input type="text" asp-for="paciente.Nombre" placeholder="Nombres y Apellidos">
     <input type="number" asp-for="paciente.NIT" placeholder="Cedula o Documento">

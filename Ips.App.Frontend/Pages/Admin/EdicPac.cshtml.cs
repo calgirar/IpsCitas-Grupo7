@@ -7,33 +7,28 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Ips.App.Dominio;
 using Ips.App.Persistencia;
 
-namespace Ips.App.Frontend.Pages
+namespace Ips.App.Frontend.Pages.Pacientes
 {
-    public class DetailsModel : PageModel
+    public class EdicPacModel : PageModel
     {
         private readonly IRepositorioPaciente _repoPaciente;
 
-        public Paciente paciente {get; set;}
-        public DetailsModel(IRepositorioPaciente repoPaciente)
+        public Paciente paciente {get;set;}
+        public EdicPacModel(IRepositorioPaciente repoPaciente)
         {
             _repoPaciente = repoPaciente;
         }
-
         public IActionResult OnGet(int id)
         {
-            paciente= _repoPaciente.ObtenerPaciente(id);
-            
-            if (paciente == null)
+            paciente=_repoPaciente.ObtenerPaciente(id);
+            if(paciente == null)
             {
                 return NotFound();
+            } else
+            {
+                return Page();
             }
-            return Page();
-        }
-        public IActionResult OnPost(Paciente paciente)
-        {
-            _repoPaciente.ActualizarPaciente(paciente); 
 
-            return RedirectToPage("Index");
         }
     }
 }

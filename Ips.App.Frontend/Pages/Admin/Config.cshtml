@@ -1,7 +1,7 @@
 ﻿@page
 @model Ips.App.Frontend.Pages.ConfigAdminModel
 @{
-    ViewData["Title"] = "Configuración";
+    ViewData["Title"] = "Configuración del Administrador";
     ViewData["Current"] = "Config";
     Layout = "_LayoutAdmin";
 
@@ -16,7 +16,7 @@
     ViewData["pacienteUsuario"] = @Model.paciente.Usuario;
 }
 <form class="cr-form" method="post" >
-    <input type="number" asp-for="paciente.Id">
+    <input type="number" asp-for="paciente.Id" hidden>
     <br>
     <input type="text" asp-for="paciente.Nombre" placeholder="Nombres y Apellidos">
     <input type="number" asp-for="paciente.NIT" placeholder="Cedula o Documento">

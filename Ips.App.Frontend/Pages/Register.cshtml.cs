@@ -26,7 +26,7 @@ namespace Ips.App.Frontend.Pages
         public IActionResult OnPost(Paciente paciente)
         {
             _repoPaciente.AñadirPaciente(paciente);
-            return RedirectToPage("Index");             
+            return RedirectToPage("Admin/Index");             
         }
     }
 }

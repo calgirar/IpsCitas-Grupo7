@@ -1,0 +1,48 @@
+﻿@page
+@model Ips.App.Frontend.Pages.Pacientes.EdicPacModel
+@{
+    ViewData["Title"] = "Detalles del Paciente";
+    ViewData["Current"] = "Pacientes";
+    Layout = "_LayoutAdminDetails";
+}
+<center>
+<table class="table table-striped">
+        <tr>
+            <th scope="col">Nombre</th>
+            <td>@Model.paciente.Nombre</td>
+        </tr>
+        <tr>
+            <th scope="col">NIT</th>
+            <td>@Model.paciente.NIT</td>
+        </tr>
+        <tr>
+            <th scope="col">FechaNacimiento</th>
+            <td>@Model.paciente.FechaNacimiento</td>
+        </tr>
+        <tr>
+            <th scope="col">Correo</th>
+            <td>@Model.paciente.Correo</td>
+        </tr>
+        <tr>
+            <th scope="col">Telefono</th>
+            <td>@Model.paciente.Telefono</td>
+        </tr>
+        <tr>
+            <th scope="col">Direccion</th>
+            <td>@Model.paciente.Direccion</td>
+        </tr>
+        <tr>
+            <th scope="col">Ciudad</th>
+            <td>@Model.paciente.Ciudad</td>
+        </tr>
+        <tr>
+            <th scope="col">Genero</th>
+            <td>@Model.paciente.Genero</td>
+        </tr>
+        <tr>
+            <th scope="col">EPS</th>
+            <td>@Model.paciente.Eps</td>
+        </tr>
+</table>
+<a class="btn-btn-secondary" asp-page="./Index">Volver</a>
+</center>

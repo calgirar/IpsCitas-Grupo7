@@ -29,5 +29,10 @@ namespace Ips.App.Frontend.Pages
             }
             return Page();
         }
+        public IActionResult OnPost(Medico medico)
+        {
+            _repoMedico.ActualizarMedico(medico);     
+            return RedirectToPage("Index");        
+        }
     }
 }
