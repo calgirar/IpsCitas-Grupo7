@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/86bfd934-70e8-4b51-8d87-fece449c1435/resourceGroups/MisionTIC2022/providers/Microsoft.Web/sites/IPSSaludIntegral",
+    "appService.deploySubpath": "Ips.App.Frontend\\publish"
+}
